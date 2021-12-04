@@ -24,19 +24,16 @@ class DiaryTableViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.rowHeight = 100
     }
     
-    
-    /*
-     var id:Int
-     var userId:UUID
-     var writingDate:String
-     var movieTitle:String
-     var diaryText:String
-     var photo:String
-     var mood:Int
-     */
+    override func viewWillAppear(_ animated: Bool) {
+        getDiaryData()
+        tableView.reloadData()
+    }
+
     func getDiaryData(){
-        let strURL = "http://localhost:8000/logvie_app/diaries"
-        let request = AF.request(strURL, method:.get)
+        let uid = UserDefaults.standard.string(forKey: "user_id")
+        let strURL = "http://localhost:8000/logvie_app/diaries/"
+        
+        let request = AF.request(strURL, method:.get, parameters:["user_id":uid])
         request.responseDecodable(of:DiaryWriting.self) { response in
             switch (response.result){
             case .success(let diaryWriting):
@@ -81,7 +78,12 @@ class DiaryTableViewController: UIViewController, UITableViewDelegate, UITableVi
             watchDate.text = diary.writingDate
         }
         if let mood = cell.viewWithTag(5) as? UILabel{
-            mood.text = moodIcon[diary.mood]
+            mood.text = moodIcon[(diary.mood-1)]
+        }
+        if let photo = cell.viewWithTag(1) as? UIImageView {
+            let imageName = diary.photo
+//            print(imagename)
+            photo.image = UIImage(named: imageName)
         }
         return cell
     }

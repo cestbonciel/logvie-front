@@ -8,19 +8,23 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import PhotosUI
 
 class WriteDiaryViewController: UIViewController {
 
 
     let myColor = UIColor(red: 133.0/255.0, green: 99.0/255.0, blue: 60.0/255.0, alpha: 1.0)
+//    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var uploadBtn: UIButton!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var uploadImageView: UIImageView!
     @IBOutlet weak var datePicker: UIDatePicker!
     
     @IBOutlet weak var movieTit: UITextField!
-    @IBOutlet weak var recordBtn: UIButton!
+    
     @IBOutlet weak var diaryText: UITextView!
     @IBOutlet weak var cancelBtn: UIButton!
-
+    
     // 기분 감정 버튼
     @IBOutlet var buttons: [UIButton]!
     var moodLib:Int = 1
@@ -54,12 +58,34 @@ class WriteDiaryViewController: UIViewController {
     
    
 
+    @IBAction func actGetImage(_ sender: Any) {
+        present(photoPicker, animated: true)
+    }
+    
+
+    
+    func userSelectedPhoto(_ image: UIImage){
+        // 이미지 피커 didFinish 선택한 이미지를 이미지뷰에 업데이트, 모델 호출, 레이블 적용
+        DispatchQueue.main.async {
+            // 메인 스레드에서 이미지 업데이트
+            self.imageView.image = image
+        }
+        
+    }
+    
+    
     @IBAction func actSave(_ sender: Any) {
         
         let dataformatter = DateFormatter()
-        dataformatter.dateFormat = "yyyy-MM-dd"
+        dataformatter.dateFormat = "yyyy년 M월 d일"
         let datestr = dataformatter.string(from: datePicker.date)
-        let photo = UIImage(named:"logo_eng")
+        let photo  = UIImage(named:"logo_eng")
+        // 선택한 사진이 nil 이면 기본 사진, 값이 있으면 이미지뷰 
+        /*if let photo = userSelectedPhoto(image) == nil{
+            photo = UIImage(named:"logo_eng")
+        } else {
+            photo = userSelectedPhoto(self.imageView)
+        }*/
     
         guard let userId = UserDefaults.standard.string(forKey: "user_id"),
               let title = movieTit.text,
@@ -136,5 +162,31 @@ extension UITextField {
         borderStyle = .none
         layer.addSublayer(border)
 
+    }
+}
+
+extension WriteDiaryViewController: PHPickerViewControllerDelegate {
+    var photoPicker: PHPickerViewController {
+        var config = PHPickerConfiguration()
+        config.selectionLimit = 1
+        config.filter = PHPickerFilter.images
+        
+        let photoPicker = PHPickerViewController(configuration: config)
+        photoPicker.delegate = self
+        
+        return photoPicker
+    }
+    
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        picker.dismiss(animated: false)
+        
+        guard let result = results.first else {
+            return
+        }
+        result.itemProvider.loadObject(ofClass: UIImage.self) { object, Error in
+            if let photo = object as? UIImage {
+                self.userSelectedPhoto(photo)
+            }
+        }
     }
 }
