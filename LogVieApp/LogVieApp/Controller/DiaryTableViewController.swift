@@ -21,7 +21,7 @@ class DiaryTableViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.rowHeight = 100
+        tableView.rowHeight = 130
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -90,11 +90,39 @@ class DiaryTableViewController: UIViewController, UITableViewDelegate, UITableVi
 //        lblTitle.text = title
 //        return cell
     
-    /*
-    func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
-        <#code#>
+    func removeDiary(id:Int){
+        let uid = UserDefaults.standard.string(forKey: "user_id")
+        let strURL = "http://localhost:8000/logvie_app/diaries/"
+        let request = AF.request(strURL, method:.delete, parameters:["user_id":uid ?? "user_id","id":id])
+        request.responseDecodable(of: DiaryWriting.self) { response in
+            switch response.result{
+            case .success(let diaryWriting):
+                self.diaries = diaryWriting.data
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            case .failure(let error):
+                print(error.errorDescription ?? "error")
+            }
+        }
     }
-    */
+    
+    //    guard let diaries = diaries else { return }
+        func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+            if editingStyle == .delete{
+                tableView.beginUpdates()
+    //            getDiaryData(indexPath.row)
+                self.diaries?.remove(at: indexPath.row)
+                
+                guard let diary = self.diaries?[indexPath.row] else { return }
+                //diary.id()
+    //            removeDiary(index: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                tableView.endUpdates()
+                
+            }
+        }
     /*
     // MARK: - Navigation
 

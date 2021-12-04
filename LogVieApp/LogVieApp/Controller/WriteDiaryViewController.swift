@@ -79,7 +79,7 @@ class WriteDiaryViewController: UIViewController {
         let dataformatter = DateFormatter()
         dataformatter.dateFormat = "yyyy년 M월 d일"
         let datestr = dataformatter.string(from: datePicker.date)
-        let photo  = UIImage(named:"logo_eng")
+        let photo  = UIImage(named:"logo2")
         // 선택한 사진이 nil 이면 기본 사진, 값이 있으면 이미지뷰 
         /*if let photo = userSelectedPhoto(image) == nil{
             photo = UIImage(named:"logo_eng")
