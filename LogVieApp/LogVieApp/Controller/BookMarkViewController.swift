@@ -1,16 +1,16 @@
 //
-//  BookmarkTableViewController.swift
+//  BookMarkViewController.swift
 //  LogVieApp
 //
-//  Created by today0818 on 2021/11/28.
+//  Created by today0818 on 2021/12/06.
 //
 
 import UIKit
 import Alamofire
 import SDWebImage
 
-class BookmarkTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class BookMarkViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
     var movies:[Movie] = []
     var favoritesCount:Int = 0
     
@@ -24,20 +24,16 @@ class BookmarkTableViewController: UIViewController, UITableViewDelegate, UITabl
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.rowHeight = 100
+        tableView.rowHeight = 70
         
         get()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        get()
-        tableView.reloadData()
-    }
-    
-    
+
     func get(){
-        let strURL = "http://localhost:8000/logvie_app/favorites/"
-        let request = AF.request(strURL, method: .get)
+        let uid = UserDefaults.standard.string(forKey: "user_id")
+        let strURL = "http://52.231.64.183:8000/logvie_app/favorites/"
+        let request = AF.request(strURL, method: .get, parameters: ["user_id":uid])
         request.responseDecodable(of: GetFavorites.self) { response in
             switch response.result{
             case.failure(let error):
@@ -80,9 +76,6 @@ class BookmarkTableViewController: UIViewController, UITableViewDelegate, UITabl
         }
     }
     
-    
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }
@@ -97,11 +90,11 @@ class BookmarkTableViewController: UIViewController, UITableViewDelegate, UITabl
         let posterPath = movie.posterPath
         let posterFullPath = "\(posterBaseURL)\(posterPath)"
         
-        if let lblTitle = cell.viewWithTag(4) as? UILabel{
+        if let lblTitle = cell.viewWithTag(2) as? UILabel{
             lblTitle.text = "\(title)"
         }
         
-        if let imgView = cell.viewWithTag(3) as? UIImageView{
+        if let imgView = cell.viewWithTag(1) as? UIImageView{
             imgView.sd_setImage(with: URL(string: posterFullPath), completed: nil)
         }
         

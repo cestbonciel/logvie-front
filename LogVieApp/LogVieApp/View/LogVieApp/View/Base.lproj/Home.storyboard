@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ndp-wB-AIr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4XS-Mm-h9F">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -13,31 +13,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Item 1-->
-        <scene sceneID="h1Z-Zg-fO1">
-            <objects>
-                <viewController storyboardIdentifier="HomeView" id="Ndp-wB-AIr" customClass="HomeViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kGv-Y6-bGa" customClass="Home">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjY-0W-7QC">
-                                <rect key="frame" x="164" y="430" width="87" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Z1h-Ni-bWW"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="kT0-ob-fUw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0td-wY-nfd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2403" y="-1615"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="gMt-yg-63Z">
             <objects>
@@ -104,6 +79,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZL-aS-oI0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3325" y="-1615"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="cly-Fd-f7i">
+            <objects>
+                <viewController storyboardIdentifier="HomeView" id="4XS-Mm-h9F" customClass="HomeViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XxG-Ss-F5G" customClass="Home">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wkd-XL-qb9"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Ka1-AW-ekN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r40-ou-DwB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2404.3478260869565" y="-1615.1785714285713"/>
         </scene>
     </scenes>
     <resources>

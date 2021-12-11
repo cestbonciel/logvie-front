@@ -11,8 +11,10 @@
 		871ED7822753D3C70091F41F /* WriteDiary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871ED7812753D3C70091F41F /* WriteDiary.storyboard */; };
 		871ED7842753DBA40091F41F /* WriteDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871ED7832753DBA40091F41F /* WriteDiaryViewController.swift */; };
 		871ED7862753F9950091F41F /* CommonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871ED7852753F9950091F41F /* CommonColor.swift */; };
+		874626A6275D9C1F00F25E38 /* AzureBlobImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874626A5275D9C1F00F25E38 /* AzureBlobImage.swift */; };
+		874626AA275DC25800F25E38 /* BookMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874626A9275DC25800F25E38 /* BookMarkViewController.swift */; };
+		8748FD24275F069D0080E310 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8748FD23275F069D0080E310 /* ImageCacheManager.swift */; };
 		8773053B274F5E0700C70F27 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 8773053A274F5E0700C70F27 /* FSCalendar */; };
-		8792F353275A2958004BD035 /* AzureBlobImageStorgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8792F352275A2958004BD035 /* AzureBlobImageStorgeViewController.swift */; };
 		879596EB274C87CD005EE16B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879596EA274C87CD005EE16B /* Login.storyboard */; };
 		879596F8274C927B005EE16B /* Cafe24SsurroundAir.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879596F7274C9170005EE16B /* Cafe24SsurroundAir.ttf */; };
 		879596F9274C927E005EE16B /* ELAND 초이스 B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879596F2274C9170005EE16B /* ELAND 초이스 B.ttf */; };
@@ -28,6 +30,9 @@
 		87959704274C9B47005EE16B /* Graph Letter v2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 87959703274C9B47005EE16B /* Graph Letter v2.pdf */; };
 		87959709274CAF2F005EE16B /* ColorTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87959708274CAF2F005EE16B /* ColorTabBarController.swift */; };
 		8795971B274CD29A005EE16B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795971A274CD29A005EE16B /* LoginViewController.swift */; };
+		8799BE98275CC44B0006FEFE /* WriteDiaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8799BE97275CC44B0006FEFE /* WriteDiaryDetailViewController.swift */; };
+		8799BE9A275D1A540006FEFE /* DiaryProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8799BE99275D1A540006FEFE /* DiaryProfileViewController.swift */; };
+		8799BE9C275D1E1D0006FEFE /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8799BE9B275D1E1D0006FEFE /* UITextField.swift */; };
 		87A363642751D365006E31DC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 87A363632751D365006E31DC /* SDWebImage */; };
 		87A363672751D378006E31DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 87A363662751D378006E31DC /* Alamofire */; };
 		87A363692751DFFA006E31DC /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A363682751DFFA006E31DC /* DiaryViewController.swift */; };
@@ -51,7 +56,6 @@
 		E9C420F62754D90000A5CAD6 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C420F52754D90000A5CAD6 /* MovieDetailViewController.swift */; };
 		E9C421262757279C00A5CAD6 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C421252757279C00A5CAD6 /* FavoriteModel.swift */; };
 		E9F59F8627528011006969F2 /* DiaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F59F8527528011006969F2 /* DiaryTableViewController.swift */; };
-		E9F59F8827528080006969F2 /* BookmarkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F59F8727528080006969F2 /* BookmarkTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +65,10 @@
 		871ED7812753D3C70091F41F /* WriteDiary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WriteDiary.storyboard; sourceTree = "<group>"; };
 		871ED7832753DBA40091F41F /* WriteDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryViewController.swift; sourceTree = "<group>"; };
 		871ED7852753F9950091F41F /* CommonColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonColor.swift; sourceTree = "<group>"; };
+		874626A5275D9C1F00F25E38 /* AzureBlobImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureBlobImage.swift; sourceTree = "<group>"; };
+		874626A9275DC25800F25E38 /* BookMarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookMarkViewController.swift; sourceTree = "<group>"; };
+		8748FD23275F069D0080E310 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
 		8792F351275A2907004BD035 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		8792F352275A2958004BD035 /* AzureBlobImageStorgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureBlobImageStorgeViewController.swift; sourceTree = "<group>"; };
 		879596EA274C87CD005EE16B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		879596EC274C9170005EE16B /* MaruBuri-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-ExtraLight.otf"; sourceTree = "<group>"; };
 		879596ED274C9170005EE16B /* MaruBuri-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-Bold.otf"; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 		87959703274C9B47005EE16B /* Graph Letter v2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Graph Letter v2.pdf"; sourceTree = "<group>"; };
 		87959708274CAF2F005EE16B /* ColorTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTabBarController.swift; sourceTree = "<group>"; };
 		8795971A274CD29A005EE16B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8799BE97275CC44B0006FEFE /* WriteDiaryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteDiaryDetailViewController.swift; sourceTree = "<group>"; };
+		8799BE99275D1A540006FEFE /* DiaryProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryProfileViewController.swift; sourceTree = "<group>"; };
+		8799BE9B275D1E1D0006FEFE /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		87A363682751DFFA006E31DC /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		87A722B9274B25FA00C72BE4 /* LogVieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogVieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A722BC274B25FA00C72BE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +110,6 @@
 		E9C420F52754D90000A5CAD6 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		E9C421252757279C00A5CAD6 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
 		E9F59F8527528011006969F2 /* DiaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewController.swift; sourceTree = "<group>"; };
-		E9F59F8727528080006969F2 /* BookmarkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				8792F351275A2907004BD035 /* Bridging-Header.h */,
-				8792F352275A2958004BD035 /* AzureBlobImageStorgeViewController.swift */,
+				874626A5275D9C1F00F25E38 /* AzureBlobImage.swift */,
 			);
 			path = AzursBlobStorage;
 			sourceTree = "<group>";
@@ -160,6 +168,8 @@
 				87959708274CAF2F005EE16B /* ColorTabBarController.swift */,
 				871ED7852753F9950091F41F /* CommonColor.swift */,
 				8714897E2757494300775F87 /* moodImoji.swift */,
+				8799BE9B275D1E1D0006FEFE /* UITextField.swift */,
+				8748FD23275F069D0080E310 /* ImageCacheManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -213,12 +223,14 @@
 			children = (
 				8795971A274CD29A005EE16B /* LoginViewController.swift */,
 				87A363682751DFFA006E31DC /* DiaryViewController.swift */,
+				8799BE99275D1A540006FEFE /* DiaryProfileViewController.swift */,
 				E9F59F8527528011006969F2 /* DiaryTableViewController.swift */,
-				E9F59F8727528080006969F2 /* BookmarkTableViewController.swift */,
+				874626A9275DC25800F25E38 /* BookMarkViewController.swift */,
 				E992DC702753816300FEEA7E /* SearchViewController.swift */,
 				E992DC722753932B00FEEA7E /* GenreViewController.swift */,
 				E9C420F52754D90000A5CAD6 /* MovieDetailViewController.swift */,
 				871ED7832753DBA40091F41F /* WriteDiaryViewController.swift */,
+				8799BE97275CC44B0006FEFE /* WriteDiaryDetailViewController.swift */,
 				87FA1FDE2754616200BE8A1C /* HomeViewController.swift */,
 				87FA202327549C2300BE8A1C /* RandomViewController.swift */,
 			);
@@ -423,9 +435,13 @@
 			files = (
 				871ED7862753F9950091F41F /* CommonColor.swift in Sources */,
 				E992DC712753816300FEEA7E /* SearchViewController.swift in Sources */,
+				8799BE9A275D1A540006FEFE /* DiaryProfileViewController.swift in Sources */,
+				8799BE9C275D1E1D0006FEFE /* UITextField.swift in Sources */,
 				E9F59F8627528011006969F2 /* DiaryTableViewController.swift in Sources */,
+				874626A6275D9C1F00F25E38 /* AzureBlobImage.swift in Sources */,
 				87FA20262754B31200BE8A1C /* DiaryModel.swift in Sources */,
 				8714897F2757494300775F87 /* moodImoji.swift in Sources */,
+				8799BE98275CC44B0006FEFE /* WriteDiaryDetailViewController.swift in Sources */,
 				87959709274CAF2F005EE16B /* ColorTabBarController.swift in Sources */,
 				E9C420F62754D90000A5CAD6 /* MovieDetailViewController.swift in Sources */,
 				87FA202427549C2300BE8A1C /* RandomViewController.swift in Sources */,
@@ -433,10 +449,10 @@
 				871ED7842753DBA40091F41F /* WriteDiaryViewController.swift in Sources */,
 				E992DC6F2753810400FEEA7E /* SearchModel.swift in Sources */,
 				E992DC732753932B00FEEA7E /* GenreViewController.swift in Sources */,
-				E9F59F8827528080006969F2 /* BookmarkTableViewController.swift in Sources */,
 				87A722BD274B25FA00C72BE4 /* AppDelegate.swift in Sources */,
-				8792F353275A2958004BD035 /* AzureBlobImageStorgeViewController.swift in Sources */,
+				874626AA275DC25800F25E38 /* BookMarkViewController.swift in Sources */,
 				8795971B274CD29A005EE16B /* LoginViewController.swift in Sources */,
+				8748FD24275F069D0080E310 /* ImageCacheManager.swift in Sources */,
 				E9C421262757279C00A5CAD6 /* FavoriteModel.swift in Sources */,
 				87A363692751DFFA006E31DC /* DiaryViewController.swift in Sources */,
 				87A722BF274B25FA00C72BE4 /* SceneDelegate.swift in Sources */,
@@ -605,6 +621,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U56QVJ4XLS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LogVieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -617,7 +634,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.go.womansup.late2021.ksh.LogVieApp;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.SeohyunKim.LogVieApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -633,6 +650,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U56QVJ4XLS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LogVieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -645,7 +663,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.go.womansup.late2021.ksh.LogVieApp;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.SeohyunKim.LogVieApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

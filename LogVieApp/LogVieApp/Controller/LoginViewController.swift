@@ -9,7 +9,7 @@ import UIKit
 
 class LoginViewController: UIViewController{
     var userId:String?
-    
+    var diaryVC:DiaryViewController?
   
     @IBOutlet weak var textField: UITextField!
     
@@ -72,6 +72,9 @@ class LoginViewController: UIViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+      
+        }
     }
     */
 

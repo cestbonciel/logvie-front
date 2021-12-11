@@ -8,6 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Cafe24SsurroundAir.ttf">
+            <string>Cafe24Ssurroundair</string>
+        </array>
         <array key="ELAND 초이스 B.ttf">
             <string>ELANDChoiceB</string>
         </array>
@@ -27,126 +30,146 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="님의 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGt-O0-nPt">
-                                <rect key="frame" x="166" y="110" width="44" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="20"/>
-                                <color key="textColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcS-VP-mC9">
-                                <rect key="frame" x="136" y="84" width="154" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcS-VP-mC9">
+                                <rect key="frame" x="136" y="84" width="150" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="1Aj-Ws-a3U"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dL-60-6DW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dL-60-6DW">
                                 <rect key="frame" x="364" y="60" width="30" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="profileSettings"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N36-Mq-Iwt">
-                                <rect key="frame" x="344" y="149" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="pencil"/>
                                 <connections>
-                                    <action selector="actWriting:" destination="K4m-D4-hzr" eventType="touchUpInside" id="DDy-VP-llZ"/>
+                                    <action selector="segueBtn:" destination="K4m-D4-hzr" eventType="touchUpInside" id="iP6-tx-hCm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ob4-Nw-hJd">
-                                <rect key="frame" x="290" y="150" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="calendar"/>
-                                <connections>
-                                    <action selector="actCalendar:" destination="K4m-D4-hzr" eventType="touchUpInside" id="Nv1-I9-q3t"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Svn-8C-jks">
-                                <rect key="frame" x="40" y="70" width="65" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.5450980392" green="0.3803921569" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XKP-Df-tN7">
-                                <rect key="frame" x="20" y="470" width="374" height="600"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="TZg-RC-rU7">
+                                <rect key="frame" x="290" y="147" width="94" height="37"/>
                                 <subviews>
-                                    <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nfy-jO-SUH">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="600"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ob4-Nw-hJd">
+                                        <rect key="frame" x="0.0" y="0.0" width="47" height="37"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="calendar"/>
                                         <connections>
-                                            <segue destination="Mqj-FR-VCk" kind="embed" id="JvA-Du-w1f"/>
+                                            <action selector="actCalendar:" destination="K4m-D4-hzr" eventType="touchUpInside" id="Nv1-I9-q3t"/>
                                         </connections>
-                                    </containerView>
-                                    <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qdj-1D-Qeg">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="600"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N36-Mq-Iwt">
+                                        <rect key="frame" x="51" y="0.0" width="43" height="37"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="pencil"/>
                                         <connections>
-                                            <segue destination="tGr-zb-hSP" kind="embed" id="kLL-hC-iyn"/>
+                                            <action selector="actWriting:" destination="K4m-D4-hzr" eventType="touchUpInside" id="DDy-VP-llZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Svn-8C-jks">
+                                <rect key="frame" x="40" y="70" width="65" height="65"/>
+                                <color key="backgroundColor" red="0.9737982154" green="0.85291486979999998" blue="0.39988413449999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="15p-Up-vqj"/>
+                                    <constraint firstAttribute="height" constant="65" id="Uqc-oO-fbq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="무비 다이어리입니다." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GvJ-hY-TqL">
+                                <rect key="frame" x="157" y="110" width="178" height="16.5"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceM" family="ELAND Choice" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zYt-gD-pyv">
+                                <rect key="frame" x="20" y="197" width="374" height="665"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QIK-TV-bEr" customClass="FSCalendar">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="223"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="sCk-mE-KKu">
+                                        <rect key="frame" x="185" y="233" width="189" height="30"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="D99-Qp-nhr">
+                                                <rect key="frame" x="0.0" y="0.0" width="189" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eW6-5k-8pf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="diary">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content=" 다이어리">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="13" name="ELANDChoiceM"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="actDiary:" destination="K4m-D4-hzr" eventType="touchUpInside" id="CE5-Ei-IwC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcU-ep-4z7">
+                                                        <rect key="frame" x="98" y="0.0" width="91" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="favorite">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content=" 즐겨찾기">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="13" name="ELANDChoiceM"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="Mqj-FR-VCk" kind="show" id="IIJ-9a-eTT"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="eW6-5k-8pf" firstAttribute="top" secondItem="D99-Qp-nhr" secondAttribute="top" id="eQy-Oj-tYQ"/>
+                                                    <constraint firstItem="LcU-ep-4z7" firstAttribute="leading" secondItem="eW6-5k-8pf" secondAttribute="trailing" constant="7" id="ymE-x5-2RX"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qdj-1D-Qeg">
+                                        <rect key="frame" x="0.0" y="273" width="374" height="392"/>
+                                        <connections>
+                                            <segue destination="tGr-zb-hSP" kind="embed" id="fQF-vg-WNH"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QIK-TV-bEr" customClass="FSCalendar">
-                                <rect key="frame" x="20" y="200" width="374" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GvJ-hY-TqL">
-                                <rect key="frame" x="213" y="111" width="161" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="무비 다이어리">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="ELANDChoiceM"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eW6-5k-8pf">
-                                <rect key="frame" x="200" y="430" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="diary">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content=" 다이어리">
-                                            <attributes>
-                                                <font key="NSFont" size="13" name="ELANDChoiceM"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="actDiary:" destination="K4m-D4-hzr" eventType="touchUpInside" id="CE5-Ei-IwC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcU-ep-4z7">
-                                <rect key="frame" x="299" y="430" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="favorite">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content=" 즐겨찾기">
-                                            <attributes>
-                                                <font key="NSFont" size="13" name="ELANDChoiceM"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="actFavorite:" destination="K4m-D4-hzr" eventType="touchUpInside" id="RZ9-UR-UNo"/>
-                                </connections>
-                            </button>
+                                <constraints>
+                                    <constraint firstItem="QIK-TV-bEr" firstAttribute="leading" secondItem="zYt-gD-pyv" secondAttribute="leadingMargin" id="31T-P6-0aW"/>
+                                    <constraint firstItem="QIK-TV-bEr" firstAttribute="leading" secondItem="Qdj-1D-Qeg" secondAttribute="leading" id="ld0-qp-xEW"/>
+                                    <constraint firstItem="sCk-mE-KKu" firstAttribute="top" secondItem="zYt-gD-pyv" secondAttribute="top" constant="233" id="z6g-f6-Fcv"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cZw-Af-QV4"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94117647058823528" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wcS-VP-mC9" firstAttribute="leading" secondItem="Svn-8C-jks" secondAttribute="trailing" constant="31" id="0gT-Ph-cQA"/>
+                            <constraint firstItem="zYt-gD-pyv" firstAttribute="top" secondItem="TZg-RC-rU7" secondAttribute="bottom" constant="13" id="3cs-sA-eIy"/>
+                            <constraint firstItem="cZw-Af-QV4" firstAttribute="trailing" secondItem="zYt-gD-pyv" secondAttribute="trailing" constant="20" id="Ae4-34-t5i"/>
+                            <constraint firstItem="zYt-gD-pyv" firstAttribute="top" secondItem="Svn-8C-jks" secondAttribute="bottom" constant="62" id="FzK-TK-KOF"/>
+                            <constraint firstItem="wcS-VP-mC9" firstAttribute="top" secondItem="cZw-Af-QV4" secondAttribute="top" constant="40" id="Gnu-Gp-MBE"/>
+                            <constraint firstItem="wcS-VP-mC9" firstAttribute="baseline" secondItem="2dL-60-6DW" secondAttribute="baseline" id="Hxa-Pj-S2p"/>
+                            <constraint firstItem="zYt-gD-pyv" firstAttribute="bottom" secondItem="cZw-Af-QV4" secondAttribute="bottom" id="NIJ-9r-eJm"/>
+                            <constraint firstItem="cZw-Af-QV4" firstAttribute="trailing" secondItem="GvJ-hY-TqL" secondAttribute="trailing" constant="79" id="R0G-El-VmM"/>
+                            <constraint firstItem="TZg-RC-rU7" firstAttribute="leading" secondItem="cZw-Af-QV4" secondAttribute="leading" constant="290" id="SE8-uO-Gbm"/>
+                            <constraint firstItem="GvJ-hY-TqL" firstAttribute="leading" secondItem="Svn-8C-jks" secondAttribute="trailing" constant="52" id="SVg-VF-aO9"/>
+                            <constraint firstItem="Svn-8C-jks" firstAttribute="top" secondItem="cZw-Af-QV4" secondAttribute="top" constant="26" id="TMz-ad-X46"/>
+                            <constraint firstItem="zYt-gD-pyv" firstAttribute="leading" secondItem="cZw-Af-QV4" secondAttribute="leading" constant="20" id="V5Y-My-qNP"/>
+                            <constraint firstItem="2dL-60-6DW" firstAttribute="leading" secondItem="wcS-VP-mC9" secondAttribute="trailing" constant="78" id="VAB-Dx-fgF"/>
+                            <constraint firstItem="Svn-8C-jks" firstAttribute="leading" secondItem="cZw-Af-QV4" secondAttribute="leading" constant="40" id="Yc1-HU-Trs"/>
+                            <constraint firstItem="GvJ-hY-TqL" firstAttribute="top" secondItem="wcS-VP-mC9" secondAttribute="bottom" constant="8" id="wDC-DB-BaM"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="nOp-Lg-f91"/>
                     <connections>
@@ -155,10 +178,8 @@
                         <outlet property="btnFavorite" destination="LcU-ep-4z7" id="MwW-Jh-rMN"/>
                         <outlet property="imgViewProfile" destination="Svn-8C-jks" id="Ffx-ji-RNf"/>
                         <outlet property="lblUserNick" destination="wcS-VP-mC9" id="9Be-ma-MRt"/>
-                        <outlet property="viewBookmark" destination="nfy-jO-SUH" id="ex3-0Y-1DC"/>
-                        <outlet property="viewCalendar" destination="QIK-TV-bEr" id="bI4-Gi-bW3"/>
+                        <outlet property="viewCalendar" destination="QIK-TV-bEr" id="ROK-bH-7bs"/>
                         <outlet property="viewDiary" destination="Qdj-1D-Qeg" id="rOX-JE-lKD"/>
-                        <outlet property="viewTable" destination="XKP-Df-tN7" id="KTi-Ci-SL2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Og-OB-HW4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -173,35 +194,45 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIV-Cm-Xi5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1391" y="-561"/>
+            <point key="canvasLocation" x="-2473" y="-121"/>
         </scene>
-        <!--Bookmark Table View Controller-->
+        <!--Book Mark View Controller-->
         <scene sceneID="BTc-qH-bHK">
             <objects>
-                <viewController id="Mqj-FR-VCk" customClass="BookmarkTableViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mqj-FR-VCk" customClass="BookMarkViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H0Y-f5-ynf">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="즐겨찾기 리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhV-eA-eHt">
+                                <rect key="frame" x="64" y="67" width="138" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="favorite" translatesAutoresizingMaskIntoConstraints="NO" id="W4b-nF-km1">
+                                <rect key="frame" x="36" y="67" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wjq-GQ-3NM">
-                                <rect key="frame" x="0.0" y="0.0" width="374" height="600"/>
+                                <rect key="frame" x="20" y="130" width="374" height="600"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellB" rowHeight="100" id="0DZ-Vh-WNH">
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellB" rowHeight="70" id="0DZ-Vh-WNH">
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0DZ-Vh-WNH" id="5YQ-Sv-RnE">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6XV-lJ-Y7P">
-                                                    <rect key="frame" x="10" y="5" width="60" height="90"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6XV-lJ-Y7P">
+                                                    <rect key="frame" x="20" y="5" width="65" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="1" green="0.84705882349999995" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aE-Uk-fSn">
-                                                    <rect key="frame" x="110" y="30" width="200" height="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aE-Uk-fSn">
+                                                    <rect key="frame" x="110" y="20" width="200" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -216,80 +247,216 @@
                         <viewLayoutGuide key="safeArea" id="2Rx-RW-hPI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ibc-0n-JJv"/>
                     <connections>
-                        <outlet property="tableView" destination="wjq-GQ-3NM" id="bOL-hI-mxo"/>
+                        <outlet property="tableView" destination="wjq-GQ-3NM" id="DfT-Rt-iws"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iB8-ZV-dc3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1542.0289855072465" y="61.607142857142854"/>
+            <point key="canvasLocation" x="-1242.0289855072465" y="-240.40178571428569"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="ee0-hG-Pko">
+        <!--Write Diary Detail View Controller-->
+        <scene sceneID="Ovf-so-Wp4">
             <objects>
-                <viewController id="2oq-MG-bDP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5K9-jH-bvZ">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="546"/>
+                <viewController id="asK-NS-KJO" customClass="WriteDiaryDetailViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aHi-LB-Tf5">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="392"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDn-Bn-raS">
+                                <rect key="frame" x="41" y="86" width="29" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceL" family="ELAND Choice" pointSize="15"/>
+                                <color key="textColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZW-OS-03l">
+                                <rect key="frame" x="41" y="119" width="39" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceL" family="ELAND Choice" pointSize="15"/>
+                                <color key="textColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="날짜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfM-1j-i3h">
+                                <rect key="frame" x="41" y="44" width="29" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceL" family="ELAND Choice" pointSize="15"/>
+                                <color key="textColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="qZe-Fw-IEm">
+                                <rect key="frame" x="41" y="33" width="274" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Osd-Kx-Ccy">
+                                <rect key="frame" x="102" y="77" width="249" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5g-yD-quX">
+                                <rect key="frame" x="102" y="114" width="50" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="😄"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyq-aF-wcv">
+                                <rect key="frame" x="148" y="111" width="50" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="😍"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35N-qM-oxq">
+                                <rect key="frame" x="196" y="111" width="50" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="🙁"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytx-0m-Kz8">
+                                <rect key="frame" x="243" y="111" width="50" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="😢"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PZ-ls-4MV">
+                                <rect key="frame" x="301" y="111" width="50" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="😴"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6bG-BY-vfD">
+                                <rect key="frame" x="41" y="158" width="310" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xJd-WI-dAa">
+                                <rect key="frame" x="41" y="303" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YY8-51-LpL">
+                                        <rect key="frame" x="15" y="20" width="44" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="cameraBtn"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81975728270000003" green="0.81921553609999997" blue="0.83921903369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cUK-XG-nWo">
+                                <rect key="frame" x="129" y="303" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Gb-ys-v78"/>
+                        <color key="backgroundColor" red="0.96067827939999995" green="0.95308357480000006" blue="0.94509750599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OAs-Db-Vf8"/>
+                    <connections>
+                        <outlet property="editDiaryMovietit" destination="Osd-Kx-Ccy" id="OfY-aO-VXJ"/>
+                        <outlet property="editDiaryText" destination="6bG-BY-vfD" id="RsX-9Z-smV"/>
+                        <outlet property="editMovieDiaryTxt" destination="6bG-BY-vfD" id="ihW-CF-DV7"/>
+                        <outlet property="editWrittenDate" destination="qZe-Fw-IEm" id="DQF-Rz-Tcp"/>
+                        <outletCollection property="editMoodImoji" destination="35N-qM-oxq" collectionClass="NSMutableArray" id="Orj-DK-cKY"/>
+                        <outletCollection property="editMoodImoji" destination="1PZ-ls-4MV" collectionClass="NSMutableArray" id="2zq-z0-R7I"/>
+                        <outletCollection property="editMoodImoji" destination="Ytx-0m-Kz8" collectionClass="NSMutableArray" id="4hK-bb-M8M"/>
+                        <outletCollection property="editMoodImoji" destination="dyq-aF-wcv" collectionClass="NSMutableArray" id="68I-2O-61i"/>
+                        <outletCollection property="editMoodImoji" destination="F5g-yD-quX" collectionClass="NSMutableArray" id="9Y5-6H-NXW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6F7-fs-3if" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3475.36231884058" y="63.616071428571423"/>
+        </scene>
+        <!--Write Diary Detail View Controller-->
+        <scene sceneID="ee0-hG-Pko">
+            <objects>
+                <viewController storyboardIdentifier="WriteDiaryDetailView" id="2oq-MG-bDP" customClass="WriteDiaryDetailViewController" customModule="LogVieApp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5K9-jH-bvZ">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="392"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m38-JI-J9u">
+                                <rect key="frame" x="33" y="115" width="287" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cafe24Ssurroundair" family="Cafe24 Ssurround air" pointSize="15"/>
+                                <color key="textColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1LH-1n-Pf9">
+                                <rect key="frame" x="69" y="164" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s2Z-x4-7Fb">
+                                <rect key="frame" x="46" y="322" width="287" height="268"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96067827939999995" green="0.95308357480000006" blue="0.94509750599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.1647058824" green="0.18823529410000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Cafe24Ssurroundair" family="Cafe24 Ssurround air" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mood:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYZ-85-iAv">
-                                <rect key="frame" x="33" y="55" width="43" height="17"/>
+                                <rect key="frame" x="33" y="71" width="50" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ELANDChoiceL" family="ELAND Choice" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Cafe24Ssurroundair" family="Cafe24 Ssurround air" pointSize="15"/>
                                 <color key="textColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m38-JI-J9u">
-                                <rect key="frame" x="33" y="97" width="42" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ELANDChoiceL" family="ELAND Choice" pointSize="15"/>
-                                <color key="textColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="imoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmw-xs-LNb">
-                                <rect key="frame" x="84" y="58" width="27" height="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="imoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmw-xs-LNb">
+                                <rect key="frame" x="83" y="74" width="27" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ELANDChoiceM" family="ELAND Choice" pointSize="12"/>
                                 <color key="textColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영화본날짜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpK-Lu-twv">
-                                <rect key="frame" x="166" y="55" width="179" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영화본날짜" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpK-Lu-twv">
+                                <rect key="frame" x="165" y="71" width="179" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ELANDChoiceL" family="ELAND Choice" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Cafe24Ssurroundair" family="Cafe24 Ssurround air" pointSize="15"/>
                                 <color key="textColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CV-bH-rwC">
-                                <rect key="frame" x="34" y="352" width="311" height="159"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujc-9N-w4T">
+                                <rect key="frame" x="295" y="24" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="ELANDChoiceM" family="ELAND Choice" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1LH-1n-Pf9">
-                                <rect key="frame" x="69" y="164" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
+                                <color key="tintColor" red="0.5450980392" green="0.3803921569" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="수정"/>
+                                <connections>
+                                    <action selector="editDiary:" destination="2oq-MG-bDP" eventType="touchUpInside" id="nHt-ux-ovw"/>
+                                    <segue destination="asK-NS-KJO" kind="show" id="bIp-aG-NM4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Tb0-er-30h"/>
                         <color key="backgroundColor" red="0.96067827939999995" green="0.95308357480000006" blue="0.94509750599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="2SC-am-6lX"/>
+                    <connections>
+                        <outlet property="diaryMovietit" destination="m38-JI-J9u" id="HzA-G9-dds"/>
+                        <outlet property="diaryView" destination="5K9-jH-bvZ" id="egL-Gv-FhZ"/>
+                        <outlet property="moodImoji" destination="Fmw-xs-LNb" id="qkF-6A-9CC"/>
+                        <outlet property="movieDiaryTxt" destination="s2Z-x4-7Fb" id="LSW-Qe-YXV"/>
+                        <outlet property="moviePhoto" destination="1LH-1n-Pf9" id="TEn-5H-uYZ"/>
+                        <outlet property="writtenDate" destination="bpK-Lu-twv" id="KOy-td-R8C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HMJ-rz-dol" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3301.449275362319" y="96.428571428571431"/>
+            <point key="canvasLocation" x="-2870" y="64"/>
         </scene>
         <!--Diary Table View Controller-->
         <scene sceneID="gwk-fy-Hos">
             <objects>
                 <viewController id="tGr-zb-hSP" customClass="DiaryTableViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GlS-DZ-Xys">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="392"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qOs-FD-jzJ">
@@ -354,7 +521,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="2oq-MG-bDP" kind="show" trigger="accessoryAction" id="BA9-96-ubH"/>
+                                            <segue destination="2oq-MG-bDP" kind="show" identifier="WriteDiaryDetailView" id="rvb-Ou-cL8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -369,15 +536,107 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sof-2g-h6y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2314.4927536231885" y="61.607142857142854"/>
+            <point key="canvasLocation" x="-2265" y="64"/>
+        </scene>
+        <!--Diary Profile View Controller-->
+        <scene sceneID="zmD-4v-VCf">
+            <objects>
+                <viewController storyboardIdentifier="reProfile" id="bd2-tm-3IV" customClass="DiaryProfileViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o8B-Il-heQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhl-RJ-d2V">
+                                <rect key="frame" x="138" y="175" width="77" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="20"/>
+                                <color key="textColor" red="0.1695179939" green="0.1864649951" blue="0.26275417210000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jvo-hx-suS">
+                                <rect key="frame" x="41" y="188" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQv-Ra-2Ck">
+                                <rect key="frame" x="38" y="194" width="70" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="cameraBtn2" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="22" scale="large" weight="regular"/>
+                                    <color key="baseForegroundColor" red="0.5450980392" green="0.3803921569" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnLibrary:" destination="bd2-tm-3IV" eventType="touchUpInside" id="jWT-un-aVy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgX-Cg-Ufr">
+                                <rect key="frame" x="114" y="418" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="15"/>
+                                <state key="normal" title="취소">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.85291486979999998" blue="0.39988413449999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.mask.bounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backButton:" destination="bd2-tm-3IV" eventType="touchUpInside" id="YXK-ny-eD0"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Pn-bn-gn3">
+                                <rect key="frame" x="138" y="219" width="209" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quF-Tu-Mby">
+                                <rect key="frame" x="216" y="418" width="90" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceM" family="ELAND Choice" pointSize="15"/>
+                                <state key="normal" title="수정">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.85291486979999998" blue="0.39988413449999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.mask.bounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submitButton:" destination="bd2-tm-3IV" eventType="touchUpInside" id="eee-gU-kpy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ccy-vW-d8z"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ac5-vT-WM8"/>
+                    <connections>
+                        <outlet property="nickNameTextField" destination="2Pn-bn-gn3" id="wwq-Es-cd0"/>
+                        <outlet property="userProfilephoto" destination="jvo-hx-suS" id="tYk-Yi-6Nq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCF-rv-Ad5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1242" y="-956"/>
         </scene>
     </scenes>
     <resources>
         <image name="calendar" width="23" height="23"/>
+        <image name="cameraBtn" width="20" height="20"/>
+        <image name="cameraBtn2" width="20" height="20"/>
         <image name="diary" width="14" height="16"/>
         <image name="favorite" width="10" height="16"/>
         <image name="pencil" width="19" height="19"/>
         <image name="profileSettings" width="6" height="30"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
