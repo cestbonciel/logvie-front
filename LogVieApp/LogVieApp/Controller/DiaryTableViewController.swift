@@ -40,7 +40,8 @@ class DiaryTableViewController: UIViewController, UITableViewDelegate, UITableVi
         var params:Parameters = [:]
         
         if let strDate = strDate {
-            strURL = "http://52.231.64.183:8000/logvie_app/diaries_date"
+//            strURL = "http://52.231.64.183:8000/logvie_app/diaries_date"
+            strURL = "http://localhost:8000/logvie_app/diaries_date"
             params = ["user_id":uid, "writing_date":strDate]
             let request = AF.request(strURL, parameters: params)
             request.responseDecodable(of:[DiaryWriting.Writings].self) { response in
@@ -58,7 +59,8 @@ class DiaryTableViewController: UIViewController, UITableViewDelegate, UITableVi
                 }
             }
         } else {
-            strURL = "http://52.231.64.183:8000/logvie_app/diaries/"
+//            strURL = "http://52.231.64.183:8000/logvie_app/diaries/"
+            strURL = "http://localhost:8000/logvie_app/diaries/"
             params = ["user_id":uid]
             let request = AF.request(strURL, parameters: params)
             request.responseDecodable(of:DiaryWriting.self) { response in
@@ -142,7 +144,8 @@ class DiaryTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func removeDiary(id:Int){
 
-        let strURL = "http://52.231.64.183:8000/logvie_app/diaries/\(id)"
+//        let strURL = "http://52.231.64.183:8000/logvie_app/diaries/\(id)"
+        let strURL = "http://localhost:8000/logvie_app/diaries/\(id)"
 //    http://0.0.0.0:8000/logvie_app/favorites/
         let request = AF.request(strURL, method:.delete)
 //        let request = AF.request(strURL, method:.delete, parameters:["user_id":uid ?? "user_id","id":id])

@@ -209,7 +209,7 @@
         <!--Color Tab Bar Controller-->
         <scene sceneID="62R-54-FNM">
             <objects>
-                <tabBarController id="y1m-4L-EeH" customClass="ColorTabBarController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="y1m-4L-EeH" customClass="ColorTabBarController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="lPx-0h-OIW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

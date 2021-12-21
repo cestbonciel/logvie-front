@@ -16,8 +16,42 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        //guard let _ = (scene as? UIWindowScene) else { return }
+        
+                
+        //let storyboard = UIStoryboard(name: "Home", bundle: nil) // Main.storyboard 가져오기
+                
+        if UserDefaults.standard.string(forKey: "nickname") == nil{
+            if let loginVC = UIStoryboard(name:"Home",bundle: nil).instantiateViewController(withIdentifier: "Login") as? LoginViewController {
+//                loginVC.modalPresentationStyle = .fullScreen
+//                self.present(loginVC, animated: true)
+                window?.rootViewController = loginVC
+            }
+//            self.tabBarController?.selectedIndex = 0
+        } else {
+             let tabBarVC = UIStoryboard(name:"Main",bundle: nil).instantiateViewController(withIdentifier: "tabBar")
+//                loginVC.modalPresentationStyle = .fullScreen
+//                self.present(loginVC, animated: true)
+                window?.rootViewController = tabBarVC
+
+        }
+       
     }
+    /*
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        if UserDefaults.standard.string(forKey: "nickname") == nil{
+            if let loginVC = UIStoryboard(name:"Home",bundle: nil).instantiateViewController(withIdentifier: "Login") as? LoginViewController {
+                window?.rootViewController = loginVC
+                
+            }
+            
+        } else {
+            let tabBarVC = UIStoryboard(name:"Main",bundle: nil).instantiateViewController(withIdentifier: "tabbar")
+            window?.rootViewController = tabBarVC
+        }
+    }
+     
+     */
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
@@ -46,7 +80,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
+    
 
 }
 

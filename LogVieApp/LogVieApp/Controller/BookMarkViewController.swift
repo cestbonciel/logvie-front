@@ -32,7 +32,8 @@ class BookMarkViewController: UIViewController, UITableViewDelegate, UITableView
 
     func get(){
         let uid = UserDefaults.standard.string(forKey: "user_id")
-        let strURL = "http://52.231.64.183:8000/logvie_app/favorites/"
+//        let strURL = "http://52.231.64.183:8000/logvie_app/favorites/"
+        let strURL = "http://localhost:8000/logvie_app/favorites/"
         let request = AF.request(strURL, method: .get, parameters: ["user_id":uid])
         request.responseDecodable(of: GetFavorites.self) { response in
             switch response.result{

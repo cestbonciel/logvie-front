@@ -55,10 +55,7 @@ class DiaryProfileViewController: UIViewController,UIImagePickerControllerDelega
         view.endEditing(true)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-//        submitButton()
-//        tableView.reloadData()
-    }
+    
 
     // 버튼_갤러리 열기
     @IBAction func btnLibrary(_ sender: Any) {

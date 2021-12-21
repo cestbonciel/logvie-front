@@ -30,7 +30,7 @@ struct GetFavorites: Codable{
 
 struct PostFavorites:Codable{
     var result: Int
-    var data:[Favorite]
+    var data:Favorite
     
     struct Favorite:Codable{
         var id:Int

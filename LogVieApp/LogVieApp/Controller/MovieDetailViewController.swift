@@ -56,7 +56,8 @@ class MovieDetailViewController: UIViewController {
     }
 
     func post(movieId:Int, userId:String){
-        let strURL = "http://52.231.64.183:8000/logvie_app/favorites/"
+//        let strURL = "http://52.231.64.183:8000/logvie_app/favorites/"
+        let strURL = "http://localhost:8000/logvie_app/favorites/"
 
         let params:Parameters = ["movie_id":movieId, "user_id":userId]
         let request = AF.request(strURL, method: .post, parameters: params)
@@ -66,7 +67,7 @@ class MovieDetailViewController: UIViewController {
                 print(error.errorDescription)
             case.success(let postFavorites):
                 let result = postFavorites.result as? String
-                if result == "sucess" {
+                if result == "success" {
                     print("성공")
                 } else {
                     print("실패")

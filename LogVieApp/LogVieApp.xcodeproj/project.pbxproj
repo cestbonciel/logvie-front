@@ -10,7 +10,6 @@
 		8714897F2757494300775F87 /* moodImoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714897E2757494300775F87 /* moodImoji.swift */; };
 		871ED7822753D3C70091F41F /* WriteDiary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871ED7812753D3C70091F41F /* WriteDiary.storyboard */; };
 		871ED7842753DBA40091F41F /* WriteDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871ED7832753DBA40091F41F /* WriteDiaryViewController.swift */; };
-		871ED7862753F9950091F41F /* CommonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871ED7852753F9950091F41F /* CommonColor.swift */; };
 		874626A6275D9C1F00F25E38 /* AzureBlobImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874626A5275D9C1F00F25E38 /* AzureBlobImage.swift */; };
 		874626AA275DC25800F25E38 /* BookMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874626A9275DC25800F25E38 /* BookMarkViewController.swift */; };
 		8748FD24275F069D0080E310 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8748FD23275F069D0080E310 /* ImageCacheManager.swift */; };
@@ -64,7 +63,6 @@
 		8714897E2757494300775F87 /* moodImoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodImoji.swift; sourceTree = "<group>"; };
 		871ED7812753D3C70091F41F /* WriteDiary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WriteDiary.storyboard; sourceTree = "<group>"; };
 		871ED7832753DBA40091F41F /* WriteDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryViewController.swift; sourceTree = "<group>"; };
-		871ED7852753F9950091F41F /* CommonColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonColor.swift; sourceTree = "<group>"; };
 		874626A5275D9C1F00F25E38 /* AzureBlobImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureBlobImage.swift; sourceTree = "<group>"; };
 		874626A9275DC25800F25E38 /* BookMarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookMarkViewController.swift; sourceTree = "<group>"; };
 		8748FD23275F069D0080E310 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				87959708274CAF2F005EE16B /* ColorTabBarController.swift */,
-				871ED7852753F9950091F41F /* CommonColor.swift */,
 				8714897E2757494300775F87 /* moodImoji.swift */,
 				8799BE9B275D1E1D0006FEFE /* UITextField.swift */,
 				8748FD23275F069D0080E310 /* ImageCacheManager.swift */,
@@ -433,7 +430,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				871ED7862753F9950091F41F /* CommonColor.swift in Sources */,
 				E992DC712753816300FEEA7E /* SearchViewController.swift in Sources */,
 				8799BE9A275D1A540006FEFE /* DiaryProfileViewController.swift in Sources */,
 				8799BE9C275D1E1D0006FEFE /* UITextField.swift in Sources */,
@@ -621,7 +617,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U56QVJ4XLS;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LogVieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -650,7 +646,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U56QVJ4XLS;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LogVieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

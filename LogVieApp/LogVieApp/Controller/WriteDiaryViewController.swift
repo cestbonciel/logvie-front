@@ -129,7 +129,8 @@ class WriteDiaryViewController: UIViewController {
     }
     
     func post(params:Parameters){
-        let strURL = "http://52.231.64.183:8000/logvie_app/diaries/"
+//        let strURL = "http://52.231.64.183:8000/logvie_app/diaries/"
+        let strURL = "http://localhost:8000/logvie_app/diaries/"
         let request = AF.request(strURL, method: .post,parameters: params)
         
         request.responseDecodable(of:BackEndResponse.self) { response in

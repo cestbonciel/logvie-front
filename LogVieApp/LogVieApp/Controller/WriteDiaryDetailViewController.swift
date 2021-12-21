@@ -144,8 +144,8 @@ class WriteDiaryDetailViewController: UIViewController {
     }
     */
     
-    @IBAction func editDiary(_ sender: Any) {
-        
-    }
+//    @IBAction func editDiary(_ sender: Any) {
+//        
+//    }
     
 }

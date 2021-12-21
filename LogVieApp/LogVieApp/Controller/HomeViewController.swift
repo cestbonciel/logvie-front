@@ -49,6 +49,11 @@ class HomeViewController: UIViewController {
         
         getMovie()
         
+        lblRank.layer.shadowOffset = CGSize(width: 3, height: 3)
+        lblRank.layer.shadowOpacity = 0.8
+        lblRank.layer.shadowRadius = 2
+        lblRank.layer.shadowColor = CGColor.init(srgbRed: 1, green: 0, blue: 0, alpha: 1)
+        
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.nextImage))
         swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
         self.view.addGestureRecognizer(swipeLeft)
@@ -60,13 +65,13 @@ class HomeViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if UserDefaults.standard.string(forKey: "nickname") == nil{
-            if let loginVC = UIStoryboard(name:"Home",bundle: nil).instantiateViewController(withIdentifier: "Login") as? LoginViewController {
-                loginVC.modalPresentationStyle = .fullScreen
-                self.present(loginVC, animated: true)
-            }
-            self.tabBarController?.selectedIndex = 0
-        }
+//        if UserDefaults.standard.string(forKey: "nickname") == nil{
+//            if let loginVC = UIStoryboard(name:"Home",bundle: nil).instantiateViewController(withIdentifier: "Login") as? LoginViewController {
+//                loginVC.modalPresentationStyle = .fullScreen
+//                self.present(loginVC, animated: true)
+//            }
+//            self.tabBarController?.selectedIndex = 0
+//        }
 //        getMovie()
     }
     

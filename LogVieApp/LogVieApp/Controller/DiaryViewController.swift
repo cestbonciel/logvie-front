@@ -16,6 +16,7 @@ class DiaryViewController: UIViewController, FSCalendarDelegate, FSCalendarDataS
     @IBOutlet weak var viewCalendar: FSCalendar!
 
    
+    @IBOutlet weak var calendarHeightConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var btnDiary: UIButton!
     @IBOutlet weak var btnFavorite: UIButton!
@@ -84,9 +85,9 @@ class DiaryViewController: UIViewController, FSCalendarDelegate, FSCalendarDataS
             imgViewProfile.contentMode = .scaleAspectFill
         }
         
-//        if let nickName = UserDefaults.standard.string(forKey: "nickname"){
-//            lblUserNick.text = nickName
-//        }
+        if let nickName = UserDefaults.standard.string(forKey: "nickname"){
+            lblUserNick.text = nickName
+        }
         
         get()
     }
@@ -104,7 +105,8 @@ class DiaryViewController: UIViewController, FSCalendarDelegate, FSCalendarDataS
     }
     
     func get(){
-        let strURL = "http://0.0.0.0:8000/logvie_app/diaries/"
+//        let strURL = "http://52.231.64.183:8000/logvie_app/diaries/"
+        let strURL = "http://localhost:8000/logvie_app/diaries/"
         let request = AF.request(strURL, method: .get)
         request.responseDecodable(of: DiaryWriting.self) { response in
             switch response.result{
@@ -177,7 +179,7 @@ class DiaryViewController: UIViewController, FSCalendarDelegate, FSCalendarDataS
     
     @IBAction func segueBtn(_ sender: Any) {
         //스토리보드ID를 참조하여 뷰 컨트롤러를 가져온다.
-        guard let profileVc = self.storyboard?.instantiateViewController(withIdentifier: "reProfile") as? DiaryProfileViewController else {
+        guard let profileVc = self.storyboard?.instantiateViewController(withIdentifier: "DiaryProfile") as? DiaryProfileViewController else {
             return
         }
         profileVc.diaryVC = self
@@ -200,4 +202,11 @@ class DiaryViewController: UIViewController, FSCalendarDelegate, FSCalendarDataS
     }
     
 
+}
+
+extension DiaryViewController: FSCalendarDelegateAppearance {
+    func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
+        self.calendarHeightConstraint.constant = bounds.height
+        self.view.layoutIfNeeded()
+    }
 }
