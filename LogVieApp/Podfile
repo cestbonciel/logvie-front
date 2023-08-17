@@ -9,6 +9,7 @@ target 'LogVieApp' do
     pod 'SwiftyJSON'
     pod 'CardSlider'
     pod 'AZSClient'
+<<<<<<< HEAD
 post_install do |installer|
     installer.generated_projects.each do |project|
           project.targets.each do |target|
@@ -18,4 +19,6 @@ post_install do |installer|
           end
    end
 end
+=======
+>>>>>>> e6c1e0aab05df91127cce08c9127965165070713
 end
