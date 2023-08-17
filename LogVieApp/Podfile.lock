@@ -1,0 +1,24 @@
+PODS:
+  - AZSClient (0.2.6)
+  - CardSlider (0.1.0)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - AZSClient
+  - CardSlider
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - AZSClient
+    - CardSlider
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  AZSClient: efd576cabf56f97e38cb1b614739f4b0c1906392
+  CardSlider: 0a8f5f17f5a76701771794b07fdaeddc512358c8
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: a51bc101e296e1a3cc3121f2385f0e77fbc0eb10
+
+COCOAPODS: 1.12.1

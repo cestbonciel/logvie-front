@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vki-0k-NDj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cafe24SsurroundAir.ttf">
+            <string>Cafe24Ssurroundair</string>
+        </array>
+        <array key="ELAND 초이스 B.ttf">
+            <string>ELANDChoiceB</string>
+        </array>
+        <array key="ELAND 초이스 L.ttf">
+            <string>ELANDChoiceL</string>
+        </array>
+        <array key="ELAND 초이스 M.ttf">
+            <string>ELANDChoiceM</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--WritingDiary-->
+        <scene sceneID="snZ-eA-8Wn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WriteDiary" referencedIdentifier="WritingDiary" id="CJH-U5-hJZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lFm-r8-2uP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIV-Cm-Xi5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2473" y="-121"/>
+        </scene>
+        <!--Book Mark View Controller-->
+        <scene sceneID="BTc-qH-bHK">
+            <objects>
+                <viewController id="Mqj-FR-VCk" customClass="BookMarkViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H0Y-f5-ynf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="즐겨찾기 리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhV-eA-eHt">
+                                <rect key="frame" x="64" y="67" width="138" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="favorite" translatesAutoresizingMaskIntoConstraints="NO" id="W4b-nF-km1">
+                                <rect key="frame" x="36" y="67" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wjq-GQ-3NM">
+                                <rect key="frame" x="20" y="130" width="374" height="600"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellB" rowHeight="70" id="0DZ-Vh-WNH">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0DZ-Vh-WNH" id="5YQ-Sv-RnE">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6XV-lJ-Y7P">
+                                                    <rect key="frame" x="20" y="5" width="65" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aE-Uk-fSn">
+                                                    <rect key="frame" x="110" y="20" width="200" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Rx-RW-hPI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ibc-0n-JJv"/>
+                    <connections>
+                        <outlet property="tableView" destination="wjq-GQ-3NM" id="DfT-Rt-iws"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iB8-ZV-dc3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1242.0289855072465" y="-240.40178571428569"/>
+        </scene>
+        <!--Write Diary Detail View Controller-->
+        <scene sceneID="ee0-hG-Pko">
+            <objects>
+                <viewController storyboardIdentifier="WriteDiaryDetailView" id="2oq-MG-bDP" customClass="WriteDiaryDetailViewController" customModule="LogVieApp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5K9-jH-bvZ">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="470"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m38-JI-J9u">
+                                <rect key="frame" x="33" y="115" width="287" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cafe24Ssurroundair" family="Cafe24 Ssurround air" pointSize="15"/>
+                                <color key="textColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1LH-1n-Pf9">
+                                <rect key="frame" x="69" y="164" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s2Z-x4-7Fb">
+                                <rect key="frame" x="46" y="322" width="287" height="268"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96067827939999995" green="0.95308357480000006" blue="0.94509750599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.1647058824" green="0.18823529410000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Cafe24Ssurroundair" family="Cafe24 Ssurround air" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mood:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYZ-85-iAv">
+                                <rect key="frame" x="33" y="71" width="50" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cafe24Ssurroundair" family="Cafe24 Ssurround air" pointSize="15"/>
+                                <color key="textColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="imoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmw-xs-LNb">
+                                <rect key="frame" x="83" y="74" width="27" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceM" family="ELAND Choice" pointSize="12"/>
+                                <color key="textColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영화본날짜" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpK-Lu-twv">
+                                <rect key="frame" x="165" y="71" width="179" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cafe24Ssurroundair" family="Cafe24 Ssurround air" pointSize="15"/>
+                                <color key="textColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tb0-er-30h"/>
+                        <color key="backgroundColor" red="0.96067827939999995" green="0.95308357480000006" blue="0.94509750599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2SC-am-6lX"/>
+                    <connections>
+                        <outlet property="diaryMovietit" destination="m38-JI-J9u" id="HzA-G9-dds"/>
+                        <outlet property="diaryView" destination="5K9-jH-bvZ" id="egL-Gv-FhZ"/>
+                        <outlet property="moodImoji" destination="Fmw-xs-LNb" id="qkF-6A-9CC"/>
+                        <outlet property="movieDiaryTxt" destination="s2Z-x4-7Fb" id="LSW-Qe-YXV"/>
+                        <outlet property="moviePhoto" destination="1LH-1n-Pf9" id="TEn-5H-uYZ"/>
+                        <outlet property="writtenDate" destination="bpK-Lu-twv" id="KOy-td-R8C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMJ-rz-dol" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2870" y="64"/>
+        </scene>
+        <!--Diary Table View Controller-->
+        <scene sceneID="gwk-fy-Hos">
+            <objects>
+                <viewController id="tGr-zb-hSP" customClass="DiaryTableViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GlS-DZ-Xys">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="470"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qOs-FD-jzJ">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="600"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="diaryCell" rowHeight="130" id="qxN-Qj-Kak">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qxN-Qj-Kak" id="Q7Z-po-gLS">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0op-oN-3rb">
+                                                    <rect key="frame" x="10" y="16" width="73" height="90"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="날짜" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdq-ys-PFM">
+                                                    <rect key="frame" x="271" y="0.0" width="94" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ELANDChoiceL" family="ELAND Choice" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJi-f2-bGI">
+                                                    <rect key="frame" x="326" y="103" width="32" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="기분 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYI-Yj-fWv">
+                                                    <rect key="frame" x="288" y="105" width="30" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ELANDChoiceM" family="ELAND Choice" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🗓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQv-32-m9C">
+                                                    <rect key="frame" x="250" y="4" width="17" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영화 제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd6-5B-B1m">
+                                                    <rect key="frame" x="110" y="31" width="200" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="일기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYI-UI-B3s">
+                                                    <rect key="frame" x="110" y="69" width="200" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ELANDChoiceM" family="ELAND Choice" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="2oq-MG-bDP" kind="show" identifier="WriteDiaryDetailView" id="rvb-Ou-cL8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mQS-x0-03u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="qOs-FD-jzJ" id="hVS-qW-K5B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sof-2g-h6y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2265" y="64"/>
+        </scene>
+        <!--Diary Profile View Controller-->
+        <scene sceneID="zmD-4v-VCf">
+            <objects>
+                <viewController storyboardIdentifier="DiaryProfile" id="bd2-tm-3IV" customClass="DiaryProfileViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o8B-Il-heQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhl-RJ-d2V">
+                                <rect key="frame" x="138" y="175" width="77" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="20"/>
+                                <color key="textColor" red="0.1695179939" green="0.1864649951" blue="0.26275417210000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jvo-hx-suS">
+                                <rect key="frame" x="41" y="188" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQv-Ra-2Ck">
+                                <rect key="frame" x="38" y="194" width="70" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="cameraBtn2" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="22" scale="large" weight="regular"/>
+                                    <color key="baseForegroundColor" red="0.5450980392" green="0.3803921569" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnLibrary:" destination="bd2-tm-3IV" eventType="touchUpInside" id="jWT-un-aVy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgX-Cg-Ufr">
+                                <rect key="frame" x="114" y="418" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="15"/>
+                                <state key="normal" title="취소">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.85291486979999998" blue="0.39988413449999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.mask.bounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backButton:" destination="bd2-tm-3IV" eventType="touchUpInside" id="YXK-ny-eD0"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Pn-bn-gn3">
+                                <rect key="frame" x="138" y="219" width="209" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quF-Tu-Mby">
+                                <rect key="frame" x="216" y="418" width="90" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceM" family="ELAND Choice" pointSize="15"/>
+                                <state key="normal" title="수정">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.85291486979999998" blue="0.39988413449999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.mask.bounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submitButton:" destination="bd2-tm-3IV" eventType="touchUpInside" id="eee-gU-kpy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ccy-vW-d8z"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ac5-vT-WM8"/>
+                    <connections>
+                        <outlet property="nickNameTextField" destination="2Pn-bn-gn3" id="wwq-Es-cd0"/>
+                        <outlet property="userProfilephoto" destination="jvo-hx-suS" id="tYk-Yi-6Nq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCF-rv-Ad5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1242" y="-956"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="xhz-NM-UaV">
+            <objects>
+                <viewController storyboardIdentifier="DiaryView" id="vki-0k-NDj" customClass="DiaryViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dK8-55-jOq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBE-Ki-19r">
+                                <rect key="frame" x="136" y="88" width="43" height="18"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilw-qj-oCk">
+                                <rect key="frame" x="388" y="64" width="6" height="30"/>
+                                <color key="tintColor" red="0.5472784638" green="0.38635545970000001" blue="0.2129407525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="profileSettings">
+                                    <color key="titleColor" red="0.5472784638" green="0.38635545970000001" blue="0.2129407525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="segueBtn:" destination="vki-0k-NDj" eventType="touchUpInside" id="0oT-xg-cmf"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cud-Av-m77">
+                                <rect key="frame" x="365" y="137" width="19" height="19"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eJ-5W-mXN">
+                                        <rect key="frame" x="0.0" y="0.0" width="19" height="19"/>
+                                        <color key="tintColor" red="0.5472784638" green="0.38635545970000001" blue="0.2129407525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="pencil">
+                                            <color key="titleColor" red="0.5472784638" green="0.38635545970000001" blue="0.2129407525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actWriting:" destination="vki-0k-NDj" eventType="touchUpInside" id="bfb-lD-F08"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lga-Dh-fsZ">
+                                <rect key="frame" x="40" y="74" width="65" height="65"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lga-Dh-fsZ" secondAttribute="height" multiplier="1:1" id="135-Vv-SS2"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bo-Ca-5tv" customClass="FSCalendar">
+                                <rect key="frame" x="20" y="169" width="374" height="223"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="223" id="Vfj-ye-uwG"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="UNz-qp-IYS">
+                                <rect key="frame" x="200" y="402" width="189" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2t0-Gh-MRd">
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="diary">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" 다이어리">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="ELANDChoiceM"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" red="0.1647058824" green="0.18823529410000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="actDiary:" destination="vki-0k-NDj" eventType="touchUpInside" id="oSg-hJ-w4N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNF-cL-g6g">
+                                        <rect key="frame" x="98" y="0.0" width="91" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="favorite">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" 즐겨찾기">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="ELANDChoiceM"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" red="0.1647058824" green="0.18823529410000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Mqj-FR-VCk" kind="show" id="PZ3-Uc-aKn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8l-mN-qyP">
+                                <rect key="frame" x="20" y="442" width="374" height="470"/>
+                                <connections>
+                                    <segue destination="tGr-zb-hSP" kind="embed" id="Gll-Cj-jNd"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="무비 다이어리" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWr-gy-Oa5">
+                                <rect key="frame" x="157" y="114" width="100" height="16.5"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceM" family="ELAND Choice" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhp-3P-eqP">
+                                <rect key="frame" x="315" y="137" width="23" height="23"/>
+                                <color key="tintColor" red="0.5472784638" green="0.38635545970000001" blue="0.2129407525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="calendar">
+                                    <color key="titleColor" red="0.5472784638" green="0.38635545970000001" blue="0.2129407525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actCalendar:" destination="vki-0k-NDj" eventType="touchUpInside" id="MfL-76-XoH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Apf-2h-fKB"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XBE-Ki-19r" firstAttribute="leading" secondItem="lga-Dh-fsZ" secondAttribute="trailing" constant="31" id="3KW-LA-hnE"/>
+                            <constraint firstItem="Rhp-3P-eqP" firstAttribute="top" secondItem="cud-Av-m77" secondAttribute="top" id="7Dj-06-zSA"/>
+                            <constraint firstItem="PWr-gy-Oa5" firstAttribute="top" secondItem="XBE-Ki-19r" secondAttribute="bottom" constant="8" id="7Uw-hE-PHH"/>
+                            <constraint firstItem="lga-Dh-fsZ" firstAttribute="top" secondItem="Apf-2h-fKB" secondAttribute="top" constant="26" id="C8h-8I-JRG"/>
+                            <constraint firstItem="PWr-gy-Oa5" firstAttribute="leading" secondItem="lga-Dh-fsZ" secondAttribute="trailing" constant="52" id="LpJ-Ud-Pjk"/>
+                            <constraint firstItem="Apf-2h-fKB" firstAttribute="trailing" secondItem="ilw-qj-oCk" secondAttribute="trailing" constant="20" id="Rju-4u-vmR"/>
+                            <constraint firstItem="cud-Av-m77" firstAttribute="top" secondItem="ilw-qj-oCk" secondAttribute="bottom" constant="43" id="VZR-FN-HSp"/>
+                            <constraint firstItem="Apf-2h-fKB" firstAttribute="trailing" secondItem="7Bo-Ca-5tv" secondAttribute="trailing" constant="20" id="Wst-Ar-ojr"/>
+                            <constraint firstItem="7Bo-Ca-5tv" firstAttribute="top" secondItem="cud-Av-m77" secondAttribute="bottom" constant="13" id="a9Q-ec-zyv"/>
+                            <constraint firstItem="UNz-qp-IYS" firstAttribute="top" secondItem="7Bo-Ca-5tv" secondAttribute="bottom" constant="10" id="aRn-up-KdT"/>
+                            <constraint firstItem="Rhp-3P-eqP" firstAttribute="centerX" secondItem="9eJ-5W-mXN" secondAttribute="centerX" constant="-48" id="aY8-eC-vkb"/>
+                            <constraint firstItem="Apf-2h-fKB" firstAttribute="trailing" secondItem="cud-Av-m77" secondAttribute="trailing" constant="30" id="bdf-eN-PgE"/>
+                            <constraint firstItem="P8l-mN-qyP" firstAttribute="bottom" secondItem="Apf-2h-fKB" secondAttribute="bottom" constant="50" id="dMw-lE-akk"/>
+                            <constraint firstItem="7Bo-Ca-5tv" firstAttribute="leading" secondItem="Apf-2h-fKB" secondAttribute="leading" constant="20" id="evl-Uu-bwQ"/>
+                            <constraint firstItem="lga-Dh-fsZ" firstAttribute="width" secondItem="dK8-55-jOq" secondAttribute="width" multiplier="0.157005" id="fFx-XS-Jzb"/>
+                            <constraint firstItem="XBE-Ki-19r" firstAttribute="top" secondItem="Apf-2h-fKB" secondAttribute="top" constant="40" id="gYf-4r-f9r"/>
+                            <constraint firstItem="P8l-mN-qyP" firstAttribute="top" secondItem="UNz-qp-IYS" secondAttribute="bottom" constant="10" id="hHS-R8-T5J"/>
+                            <constraint firstItem="lga-Dh-fsZ" firstAttribute="leading" secondItem="Apf-2h-fKB" secondAttribute="leading" constant="40" id="rA7-ro-PbI"/>
+                            <constraint firstItem="ilw-qj-oCk" firstAttribute="top" secondItem="Apf-2h-fKB" secondAttribute="top" constant="16" id="rFs-QE-9c9"/>
+                            <constraint firstItem="Apf-2h-fKB" firstAttribute="trailing" secondItem="P8l-mN-qyP" secondAttribute="trailing" constant="20" id="rnN-Mv-2xl"/>
+                            <constraint firstItem="7Bo-Ca-5tv" firstAttribute="centerX" secondItem="PWr-gy-Oa5" secondAttribute="centerX" id="vvd-3b-gCx"/>
+                            <constraint firstItem="P8l-mN-qyP" firstAttribute="leading" secondItem="Apf-2h-fKB" secondAttribute="leading" constant="20" id="xHr-9g-0XM"/>
+                            <constraint firstItem="Apf-2h-fKB" firstAttribute="trailing" secondItem="UNz-qp-IYS" secondAttribute="trailing" constant="25" id="zBv-Eo-xPl"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="g2e-Y8-Sbw"/>
+                    <connections>
+                        <outlet property="btnCalendar" destination="Rhp-3P-eqP" id="f9k-KK-UBE"/>
+                        <outlet property="btnDiary" destination="2t0-Gh-MRd" id="PHP-rp-NfD"/>
+                        <outlet property="btnFavorite" destination="aNF-cL-g6g" id="jbu-aF-evK"/>
+                        <outlet property="calendarHeightConstraint" destination="Vfj-ye-uwG" id="AVw-tx-rej"/>
+                        <outlet property="imgViewProfile" destination="lga-Dh-fsZ" id="laC-vb-7mK"/>
+                        <outlet property="lblUserNick" destination="XBE-Ki-19r" id="bNN-3z-R2L"/>
+                        <outlet property="viewCalendar" destination="7Bo-Ca-5tv" id="1y1-6y-g2I"/>
+                        <outlet property="viewDiary" destination="P8l-mN-qyP" id="FkR-yp-uvz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPX-IN-SMj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2265" y="-633"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" width="23" height="23"/>
+        <image name="cameraBtn2" width="20" height="20"/>
+        <image name="diary" width="14" height="16"/>
+        <image name="favorite" width="10" height="16"/>
+        <image name="pencil" width="19" height="19"/>
+        <image name="profileSettings" width="6" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

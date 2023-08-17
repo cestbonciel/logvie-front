@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8714897F2757494300775F87 /* moodImoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714897E2757494300775F87 /* moodImoji.swift */; };
+		871ED7822753D3C70091F41F /* WriteDiary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871ED7812753D3C70091F41F /* WriteDiary.storyboard */; };
+		871ED7842753DBA40091F41F /* WriteDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871ED7832753DBA40091F41F /* WriteDiaryViewController.swift */; };
+		874626A6275D9C1F00F25E38 /* AzureBlobImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874626A5275D9C1F00F25E38 /* AzureBlobImage.swift */; };
+		874626AA275DC25800F25E38 /* BookMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874626A9275DC25800F25E38 /* BookMarkViewController.swift */; };
+		8748FD24275F069D0080E310 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8748FD23275F069D0080E310 /* ImageCacheManager.swift */; };
+		8773053B274F5E0700C70F27 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 8773053A274F5E0700C70F27 /* FSCalendar */; };
+		879596EB274C87CD005EE16B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879596EA274C87CD005EE16B /* Login.storyboard */; };
+		879596F8274C927B005EE16B /* Cafe24SsurroundAir.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879596F7274C9170005EE16B /* Cafe24SsurroundAir.ttf */; };
+		879596F9274C927E005EE16B /* ELAND 초이스 B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879596F2274C9170005EE16B /* ELAND 초이스 B.ttf */; };
+		879596FA274C9280005EE16B /* ELAND 초이스 L.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879596F1274C9170005EE16B /* ELAND 초이스 L.ttf */; };
+		879596FB274C9283005EE16B /* MaruBuri-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879596ED274C9170005EE16B /* MaruBuri-Bold.otf */; };
+		879596FC274C9287005EE16B /* MaruBuri-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879596EC274C9170005EE16B /* MaruBuri-ExtraLight.otf */; };
+		879596FD274C928A005EE16B /* MaruBuri-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879596EE274C9170005EE16B /* MaruBuri-Light.otf */; };
+		879596FE274C928C005EE16B /* MaruBuri-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879596EF274C9170005EE16B /* MaruBuri-Regular.otf */; };
+		879596FF274C9290005EE16B /* MaruBuri-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879596F5274C9170005EE16B /* MaruBuri-SemiBold.otf */; };
+		87959700274C9292005EE16B /* Wemakeprice-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879596F3274C9170005EE16B /* Wemakeprice-Regular.ttf */; };
+		87959701274C9295005EE16B /* Wemakeprice-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879596F0274C9170005EE16B /* Wemakeprice-Bold.ttf */; };
+		87959702274C9297005EE16B /* Wemakeprice-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879596F4274C9170005EE16B /* Wemakeprice-SemiBold.ttf */; };
+		87959704274C9B47005EE16B /* Graph Letter v2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 87959703274C9B47005EE16B /* Graph Letter v2.pdf */; };
+		87959709274CAF2F005EE16B /* ColorTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87959708274CAF2F005EE16B /* ColorTabBarController.swift */; };
+		8795971B274CD29A005EE16B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8795971A274CD29A005EE16B /* LoginViewController.swift */; };
+		8799BE98275CC44B0006FEFE /* WriteDiaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8799BE97275CC44B0006FEFE /* WriteDiaryDetailViewController.swift */; };
+		8799BE9A275D1A540006FEFE /* DiaryProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8799BE99275D1A540006FEFE /* DiaryProfileViewController.swift */; };
+		8799BE9C275D1E1D0006FEFE /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8799BE9B275D1E1D0006FEFE /* UITextField.swift */; };
+		87A363642751D365006E31DC /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 87A363632751D365006E31DC /* SDWebImage */; };
+		87A363672751D378006E31DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 87A363662751D378006E31DC /* Alamofire */; };
+		87A363692751DFFA006E31DC /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A363682751DFFA006E31DC /* DiaryViewController.swift */; };
+		87A722BD274B25FA00C72BE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A722BC274B25FA00C72BE4 /* AppDelegate.swift */; };
+		87A722BF274B25FA00C72BE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A722BE274B25FA00C72BE4 /* SceneDelegate.swift */; };
+		87A722C4274B25FA00C72BE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A722C2274B25FA00C72BE4 /* Main.storyboard */; };
+		87A722C6274B25FC00C72BE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A722C5274B25FC00C72BE4 /* Assets.xcassets */; };
+		87A722C9274B25FC00C72BE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A722C7274B25FC00C72BE4 /* LaunchScreen.storyboard */; };
+		87A722E8274B3A0A00C72BE4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A722E6274B3A0A00C72BE4 /* Home.storyboard */; };
+		87A722F4274B3D1800C72BE4 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A722F3274B3D1800C72BE4 /* Search.storyboard */; };
+		87A722F7274B3E1700C72BE4 /* Random.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A722F5274B3E1700C72BE4 /* Random.storyboard */; };
+		87A722F9274B3E5D00C72BE4 /* Diary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A722F8274B3E5D00C72BE4 /* Diary.storyboard */; };
+		87FA1FDF2754616200BE8A1C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FA1FDE2754616200BE8A1C /* HomeViewController.swift */; };
+		87FA202427549C2300BE8A1C /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FA202327549C2300BE8A1C /* RandomViewController.swift */; };
+		87FA20262754B31200BE8A1C /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FA20252754B31200BE8A1C /* DiaryModel.swift */; };
+		A0555772BE3EC93831BF7A07 /* Pods_LogVieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FBE487B47172A023C09A17 /* Pods_LogVieApp.framework */; };
+		E992DC6F2753810400FEEA7E /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992DC6E2753810400FEEA7E /* SearchModel.swift */; };
+		E992DC712753816300FEEA7E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992DC702753816300FEEA7E /* SearchViewController.swift */; };
+		E992DC732753932B00FEEA7E /* GenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992DC722753932B00FEEA7E /* GenreViewController.swift */; };
+		E992DC762753A44A00FEEA7E /* ELAND 초이스 M.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 879596F6274C9170005EE16B /* ELAND 초이스 M.ttf */; };
+		E9C420F62754D90000A5CAD6 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C420F52754D90000A5CAD6 /* MovieDetailViewController.swift */; };
+		E9C421262757279C00A5CAD6 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C421252757279C00A5CAD6 /* FavoriteModel.swift */; };
+		E9F59F8627528011006969F2 /* DiaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F59F8527528011006969F2 /* DiaryTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22F199BA2BB906A6B92640CE /* Pods-LogVieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogVieApp.release.xcconfig"; path = "Target Support Files/Pods-LogVieApp/Pods-LogVieApp.release.xcconfig"; sourceTree = "<group>"; };
+		671F78B91AB940706EC96338 /* Pods-LogVieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogVieApp.debug.xcconfig"; path = "Target Support Files/Pods-LogVieApp/Pods-LogVieApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8714897E2757494300775F87 /* moodImoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodImoji.swift; sourceTree = "<group>"; };
+		871ED7812753D3C70091F41F /* WriteDiary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WriteDiary.storyboard; sourceTree = "<group>"; };
+		871ED7832753DBA40091F41F /* WriteDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryViewController.swift; sourceTree = "<group>"; };
+		874626A5275D9C1F00F25E38 /* AzureBlobImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureBlobImage.swift; sourceTree = "<group>"; };
+		874626A9275DC25800F25E38 /* BookMarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookMarkViewController.swift; sourceTree = "<group>"; };
+		8748FD23275F069D0080E310 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		8792F351275A2907004BD035 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		879596EA274C87CD005EE16B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		879596EC274C9170005EE16B /* MaruBuri-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-ExtraLight.otf"; sourceTree = "<group>"; };
+		879596ED274C9170005EE16B /* MaruBuri-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-Bold.otf"; sourceTree = "<group>"; };
+		879596EE274C9170005EE16B /* MaruBuri-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-Light.otf"; sourceTree = "<group>"; };
+		879596EF274C9170005EE16B /* MaruBuri-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-Regular.otf"; sourceTree = "<group>"; };
+		879596F0274C9170005EE16B /* Wemakeprice-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wemakeprice-Bold.ttf"; sourceTree = "<group>"; };
+		879596F1274C9170005EE16B /* ELAND 초이스 L.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ELAND 초이스 L.ttf"; sourceTree = "<group>"; };
+		879596F2274C9170005EE16B /* ELAND 초이스 B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ELAND 초이스 B.ttf"; sourceTree = "<group>"; };
+		879596F3274C9170005EE16B /* Wemakeprice-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wemakeprice-Regular.ttf"; sourceTree = "<group>"; };
+		879596F4274C9170005EE16B /* Wemakeprice-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wemakeprice-SemiBold.ttf"; sourceTree = "<group>"; };
+		879596F5274C9170005EE16B /* MaruBuri-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaruBuri-SemiBold.otf"; sourceTree = "<group>"; };
+		879596F6274C9170005EE16B /* ELAND 초이스 M.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ELAND 초이스 M.ttf"; sourceTree = "<group>"; };
+		879596F7274C9170005EE16B /* Cafe24SsurroundAir.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafe24SsurroundAir.ttf; sourceTree = "<group>"; };
+		87959703274C9B47005EE16B /* Graph Letter v2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Graph Letter v2.pdf"; sourceTree = "<group>"; };
+		87959708274CAF2F005EE16B /* ColorTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTabBarController.swift; sourceTree = "<group>"; };
+		8795971A274CD29A005EE16B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8799BE97275CC44B0006FEFE /* WriteDiaryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteDiaryDetailViewController.swift; sourceTree = "<group>"; };
+		8799BE99275D1A540006FEFE /* DiaryProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryProfileViewController.swift; sourceTree = "<group>"; };
+		8799BE9B275D1E1D0006FEFE /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		87A363682751DFFA006E31DC /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		87A722B9274B25FA00C72BE4 /* LogVieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogVieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A722BC274B25FA00C72BE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87A722BE274B25FA00C72BE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		87A722C3274B25FA00C72BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87A722C5274B25FC00C72BE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87A722C8274B25FC00C72BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87A722CA274B25FC00C72BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87A722E7274B3A0A00C72BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LogVieApp/View/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		87A722F3274B3D1800C72BE4 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		87A722F6274B3E1700C72BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LogVieApp/View/Base.lproj/Random.storyboard; sourceTree = "<group>"; };
+		87A722F8274B3E5D00C72BE4 /* Diary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diary.storyboard; sourceTree = "<group>"; };
+		87FA1FDE2754616200BE8A1C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		87FA202327549C2300BE8A1C /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
+		87FA20252754B31200BE8A1C /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
+		E0FBE487B47172A023C09A17 /* Pods_LogVieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogVieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E992DC6E2753810400FEEA7E /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		E992DC702753816300FEEA7E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E992DC722753932B00FEEA7E /* GenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewController.swift; sourceTree = "<group>"; };
+		E9C420F52754D90000A5CAD6 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		E9C421252757279C00A5CAD6 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		E9F59F8527528011006969F2 /* DiaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87A722B6274B25FA00C72BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87A363642751D365006E31DC /* SDWebImage in Frameworks */,
+				87A363672751D378006E31DC /* Alamofire in Frameworks */,
+				8773053B274F5E0700C70F27 /* FSCalendar in Frameworks */,
+				A0555772BE3EC93831BF7A07 /* Pods_LogVieApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D4F06C7D2644CCF4A29E52F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0FBE487B47172A023C09A17 /* Pods_LogVieApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75B9184E6F5275EFABF0F522 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				671F78B91AB940706EC96338 /* Pods-LogVieApp.debug.xcconfig */,
+				22F199BA2BB906A6B92640CE /* Pods-LogVieApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8777515D275BD71300195154 /* DelegateFiles */ = {
+			isa = PBXGroup;
+			children = (
+				87A722BC274B25FA00C72BE4 /* AppDelegate.swift */,
+				87A722BE274B25FA00C72BE4 /* SceneDelegate.swift */,
+			);
+			path = DelegateFiles;
+			sourceTree = "<group>";
+		};
+		8792F350275A28DC004BD035 /* AzursBlobStorage */ = {
+			isa = PBXGroup;
+			children = (
+				8792F351275A2907004BD035 /* Bridging-Header.h */,
+				874626A5275D9C1F00F25E38 /* AzureBlobImage.swift */,
+			);
+			path = AzursBlobStorage;
+			sourceTree = "<group>";
+		};
+		87959707274CAEF7005EE16B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				87959708274CAF2F005EE16B /* ColorTabBarController.swift */,
+				8714897E2757494300775F87 /* moodImoji.swift */,
+				8799BE9B275D1E1D0006FEFE /* UITextField.swift */,
+				8748FD23275F069D0080E310 /* ImageCacheManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		87A722B0274B25FA00C72BE4 = {
+			isa = PBXGroup;
+			children = (
+				87A722BB274B25FA00C72BE4 /* LogVieApp */,
+				87A722BA274B25FA00C72BE4 /* Products */,
+				75B9184E6F5275EFABF0F522 /* Pods */,
+				0D4F06C7D2644CCF4A29E52F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87A722BA274B25FA00C72BE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87A722B9274B25FA00C72BE4 /* LogVieApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87A722BB274B25FA00C72BE4 /* LogVieApp */ = {
+			isa = PBXGroup;
+			children = (
+				8777515D275BD71300195154 /* DelegateFiles */,
+				8792F350275A28DC004BD035 /* AzursBlobStorage */,
+				87959707274CAEF7005EE16B /* Common */,
+				87A722D2274B2B6900C72BE4 /* View */,
+				87A722D1274B2B5A00C72BE4 /* Controller */,
+				87A722D0274B261000C72BE4 /* Models */,
+				87A722FC274B409000C72BE4 /* Sample_images */,
+				87A722FA274B406500C72BE4 /* Resource */,
+				87A722CA274B25FC00C72BE4 /* Info.plist */,
+			);
+			path = LogVieApp;
+			sourceTree = "<group>";
+		};
+		87A722D0274B261000C72BE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E992DC6E2753810400FEEA7E /* SearchModel.swift */,
+				87FA20252754B31200BE8A1C /* DiaryModel.swift */,
+				E9C421252757279C00A5CAD6 /* FavoriteModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		87A722D1274B2B5A00C72BE4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8795971A274CD29A005EE16B /* LoginViewController.swift */,
+				87A363682751DFFA006E31DC /* DiaryViewController.swift */,
+				8799BE99275D1A540006FEFE /* DiaryProfileViewController.swift */,
+				E9F59F8527528011006969F2 /* DiaryTableViewController.swift */,
+				874626A9275DC25800F25E38 /* BookMarkViewController.swift */,
+				E992DC702753816300FEEA7E /* SearchViewController.swift */,
+				E992DC722753932B00FEEA7E /* GenreViewController.swift */,
+				E9C420F52754D90000A5CAD6 /* MovieDetailViewController.swift */,
+				871ED7832753DBA40091F41F /* WriteDiaryViewController.swift */,
+				8799BE97275CC44B0006FEFE /* WriteDiaryDetailViewController.swift */,
+				87FA1FDE2754616200BE8A1C /* HomeViewController.swift */,
+				87FA202327549C2300BE8A1C /* RandomViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		87A722D2274B2B6900C72BE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87A722F8274B3E5D00C72BE4 /* Diary.storyboard */,
+				87A722F5274B3E1700C72BE4 /* Random.storyboard */,
+				87A722F3274B3D1800C72BE4 /* Search.storyboard */,
+				87A722E6274B3A0A00C72BE4 /* Home.storyboard */,
+				87A722C7274B25FC00C72BE4 /* LaunchScreen.storyboard */,
+				87A722C2274B25FA00C72BE4 /* Main.storyboard */,
+				879596EA274C87CD005EE16B /* Login.storyboard */,
+				871ED7812753D3C70091F41F /* WriteDiary.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87A722FA274B406500C72BE4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				87A722C5274B25FC00C72BE4 /* Assets.xcassets */,
+				87A722FB274B407600C72BE4 /* Fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		87A722FB274B407600C72BE4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				879596F7274C9170005EE16B /* Cafe24SsurroundAir.ttf */,
+				879596F2274C9170005EE16B /* ELAND 초이스 B.ttf */,
+				879596F1274C9170005EE16B /* ELAND 초이스 L.ttf */,
+				879596F6274C9170005EE16B /* ELAND 초이스 M.ttf */,
+				879596ED274C9170005EE16B /* MaruBuri-Bold.otf */,
+				879596EC274C9170005EE16B /* MaruBuri-ExtraLight.otf */,
+				879596EE274C9170005EE16B /* MaruBuri-Light.otf */,
+				879596EF274C9170005EE16B /* MaruBuri-Regular.otf */,
+				879596F5274C9170005EE16B /* MaruBuri-SemiBold.otf */,
+				879596F0274C9170005EE16B /* Wemakeprice-Bold.ttf */,
+				879596F3274C9170005EE16B /* Wemakeprice-Regular.ttf */,
+				879596F4274C9170005EE16B /* Wemakeprice-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		87A722FC274B409000C72BE4 /* Sample_images */ = {
+			isa = PBXGroup;
+			children = (
+				87959703274C9B47005EE16B /* Graph Letter v2.pdf */,
+			);
+			path = Sample_images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87A722B8274B25FA00C72BE4 /* LogVieApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87A722CD274B25FC00C72BE4 /* Build configuration list for PBXNativeTarget "LogVieApp" */;
+			buildPhases = (
+				174958CDD8A8F822F3174261 /* [CP] Check Pods Manifest.lock */,
+				87A722B5274B25FA00C72BE4 /* Sources */,
+				87A722B6274B25FA00C72BE4 /* Frameworks */,
+				87A722B7274B25FA00C72BE4 /* Resources */,
+				EE0523278257E9C313B86297 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogVieApp;
+			packageProductDependencies = (
+				8773053A274F5E0700C70F27 /* FSCalendar */,
+				87A363632751D365006E31DC /* SDWebImage */,
+				87A363662751D378006E31DC /* Alamofire */,
+			);
+			productName = LogVieApp;
+			productReference = 87A722B9274B25FA00C72BE4 /* LogVieApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87A722B1274B25FA00C72BE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					87A722B8274B25FA00C72BE4 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 87A722B4274B25FA00C72BE4 /* Build configuration list for PBXProject "LogVieApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87A722B0274B25FA00C72BE4;
+			packageReferences = (
+				87730539274F5E0700C70F27 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				8773053C274F5E7900C70F27 /* XCRemoteSwiftPackageReference "cardslider" */,
+				87A363622751D365006E31DC /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				87A363652751D378006E31DC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 87A722BA274B25FA00C72BE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87A722B8274B25FA00C72BE4 /* LogVieApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87A722B7274B25FA00C72BE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879596FA274C9280005EE16B /* ELAND 초이스 L.ttf in Resources */,
+				87959704274C9B47005EE16B /* Graph Letter v2.pdf in Resources */,
+				879596FB274C9283005EE16B /* MaruBuri-Bold.otf in Resources */,
+				879596EB274C87CD005EE16B /* Login.storyboard in Resources */,
+				87959701274C9295005EE16B /* Wemakeprice-Bold.ttf in Resources */,
+				879596FC274C9287005EE16B /* MaruBuri-ExtraLight.otf in Resources */,
+				87A722F9274B3E5D00C72BE4 /* Diary.storyboard in Resources */,
+				879596FD274C928A005EE16B /* MaruBuri-Light.otf in Resources */,
+				87959700274C9292005EE16B /* Wemakeprice-Regular.ttf in Resources */,
+				87A722C9274B25FC00C72BE4 /* LaunchScreen.storyboard in Resources */,
+				871ED7822753D3C70091F41F /* WriteDiary.storyboard in Resources */,
+				87A722F7274B3E1700C72BE4 /* Random.storyboard in Resources */,
+				87959702274C9297005EE16B /* Wemakeprice-SemiBold.ttf in Resources */,
+				E992DC762753A44A00FEEA7E /* ELAND 초이스 M.ttf in Resources */,
+				87A722C6274B25FC00C72BE4 /* Assets.xcassets in Resources */,
+				879596FE274C928C005EE16B /* MaruBuri-Regular.otf in Resources */,
+				87A722F4274B3D1800C72BE4 /* Search.storyboard in Resources */,
+				87A722C4274B25FA00C72BE4 /* Main.storyboard in Resources */,
+				87A722E8274B3A0A00C72BE4 /* Home.storyboard in Resources */,
+				879596F8274C927B005EE16B /* Cafe24SsurroundAir.ttf in Resources */,
+				879596F9274C927E005EE16B /* ELAND 초이스 B.ttf in Resources */,
+				879596FF274C9290005EE16B /* MaruBuri-SemiBold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		174958CDD8A8F822F3174261 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LogVieApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE0523278257E9C313B86297 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LogVieApp/Pods-LogVieApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LogVieApp/Pods-LogVieApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LogVieApp/Pods-LogVieApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87A722B5274B25FA00C72BE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E992DC712753816300FEEA7E /* SearchViewController.swift in Sources */,
+				8799BE9A275D1A540006FEFE /* DiaryProfileViewController.swift in Sources */,
+				8799BE9C275D1E1D0006FEFE /* UITextField.swift in Sources */,
+				E9F59F8627528011006969F2 /* DiaryTableViewController.swift in Sources */,
+				874626A6275D9C1F00F25E38 /* AzureBlobImage.swift in Sources */,
+				87FA20262754B31200BE8A1C /* DiaryModel.swift in Sources */,
+				8714897F2757494300775F87 /* moodImoji.swift in Sources */,
+				8799BE98275CC44B0006FEFE /* WriteDiaryDetailViewController.swift in Sources */,
+				87959709274CAF2F005EE16B /* ColorTabBarController.swift in Sources */,
+				E9C420F62754D90000A5CAD6 /* MovieDetailViewController.swift in Sources */,
+				87FA202427549C2300BE8A1C /* RandomViewController.swift in Sources */,
+				87FA1FDF2754616200BE8A1C /* HomeViewController.swift in Sources */,
+				871ED7842753DBA40091F41F /* WriteDiaryViewController.swift in Sources */,
+				E992DC6F2753810400FEEA7E /* SearchModel.swift in Sources */,
+				E992DC732753932B00FEEA7E /* GenreViewController.swift in Sources */,
+				87A722BD274B25FA00C72BE4 /* AppDelegate.swift in Sources */,
+				874626AA275DC25800F25E38 /* BookMarkViewController.swift in Sources */,
+				8795971B274CD29A005EE16B /* LoginViewController.swift in Sources */,
+				8748FD24275F069D0080E310 /* ImageCacheManager.swift in Sources */,
+				E9C421262757279C00A5CAD6 /* FavoriteModel.swift in Sources */,
+				87A363692751DFFA006E31DC /* DiaryViewController.swift in Sources */,
+				87A722BF274B25FA00C72BE4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		87A722C2274B25FA00C72BE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87A722C3274B25FA00C72BE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87A722C7274B25FC00C72BE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87A722C8274B25FC00C72BE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		87A722E6274B3A0A00C72BE4 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87A722E7274B3A0A00C72BE4 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		87A722F5274B3E1700C72BE4 /* Random.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87A722F6274B3E1700C72BE4 /* Base */,
+			);
+			name = Random.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87A722CB274B25FC00C72BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87A722CC274B25FC00C72BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87A722CE274B25FC00C72BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 671F78B91AB940706EC96338 /* Pods-LogVieApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LogVieApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.SeohyunKim.LogVieApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87A722CF274B25FC00C72BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F199BA2BB906A6B92640CE /* Pods-LogVieApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LogVieApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.SeohyunKim.LogVieApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87A722B4274B25FA00C72BE4 /* Build configuration list for PBXProject "LogVieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87A722CB274B25FC00C72BE4 /* Debug */,
+				87A722CC274B25FC00C72BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87A722CD274B25FC00C72BE4 /* Build configuration list for PBXNativeTarget "LogVieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87A722CE274B25FC00C72BE4 /* Debug */,
+				87A722CF274B25FC00C72BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		87730539274F5E0700C70F27 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		8773053C274F5E7900C70F27 /* XCRemoteSwiftPackageReference "cardslider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Ramotion/cardslider.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		87A363622751D365006E31DC /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		87A363652751D378006E31DC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8773053A274F5E0700C70F27 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87730539274F5E0700C70F27 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		87A363632751D365006E31DC /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87A363622751D365006E31DC /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		87A363662751D378006E31DC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87A363652751D378006E31DC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 87A722B1274B25FA00C72BE4 /* Project object */;
+}
