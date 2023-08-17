@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vki-0k-NDj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vki-0k-NDj">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -45,11 +38,7 @@
             <objects>
                 <viewController id="Mqj-FR-VCk" customClass="BookMarkViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H0Y-f5-ynf">
-<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
-=======
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="즐겨찾기 리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhV-eA-eHt">
@@ -69,11 +58,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellB" rowHeight="70" id="0DZ-Vh-WNH">
-<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="50" width="374" height="70"/>
-=======
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="70"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0DZ-Vh-WNH" id="5YQ-Sv-RnE">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
@@ -113,11 +98,7 @@
             <objects>
                 <viewController storyboardIdentifier="WriteDiaryDetailView" id="2oq-MG-bDP" customClass="WriteDiaryDetailViewController" customModule="LogVieApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5K9-jH-bvZ">
-<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="374" height="470"/>
-=======
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="442"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m38-JI-J9u">
@@ -186,11 +167,7 @@
             <objects>
                 <viewController id="tGr-zb-hSP" customClass="DiaryTableViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GlS-DZ-Xys">
-<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="374" height="470"/>
-=======
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="442"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qOs-FD-jzJ">
@@ -199,11 +176,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="diaryCell" rowHeight="130" id="qxN-Qj-Kak">
-<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="50" width="374" height="130"/>
-=======
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="130"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qxN-Qj-Kak" id="Q7Z-po-gLS">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="130"/>
@@ -372,34 +345,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBE-Ki-19r">
-<<<<<<< HEAD
                                 <rect key="frame" x="136" y="88" width="43" height="18"/>
-=======
-                                <rect key="frame" x="136" y="84" width="43" height="18"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                 <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilw-qj-oCk">
-<<<<<<< HEAD
                                 <rect key="frame" x="388" y="64" width="6" height="30"/>
                                 <color key="tintColor" red="0.5472784638" green="0.38635545970000001" blue="0.2129407525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="profileSettings">
                                     <color key="titleColor" red="0.5472784638" green="0.38635545970000001" blue="0.2129407525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-=======
-                                <rect key="frame" x="364" y="60" width="30" height="44"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="profileSettings"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                 <connections>
                                     <action selector="segueBtn:" destination="vki-0k-NDj" eventType="touchUpInside" id="0oT-xg-cmf"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cud-Av-m77">
-<<<<<<< HEAD
                                 <rect key="frame" x="365" y="137" width="19" height="19"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eJ-5W-mXN">
@@ -409,22 +371,6 @@
                                         <state key="normal" image="pencil">
                                             <color key="titleColor" red="0.5472784638" green="0.38635545970000001" blue="0.2129407525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-=======
-                                <rect key="frame" x="290" y="147" width="94" height="37"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhp-3P-eqP">
-                                        <rect key="frame" x="0.0" y="0.0" width="47" height="37"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="calendar"/>
-                                        <connections>
-                                            <action selector="actCalendar:" destination="vki-0k-NDj" eventType="touchUpInside" id="MfL-76-XoH"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eJ-5W-mXN">
-                                        <rect key="frame" x="51" y="0.0" width="43" height="37"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="pencil"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                         <connections>
                                             <action selector="actWriting:" destination="vki-0k-NDj" eventType="touchUpInside" id="bfb-lD-F08"/>
                                         </connections>
@@ -432,33 +378,21 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lga-Dh-fsZ">
-<<<<<<< HEAD
                                 <rect key="frame" x="40" y="74" width="65" height="65"/>
-=======
-                                <rect key="frame" x="40" y="70" width="65" height="65"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lga-Dh-fsZ" secondAttribute="height" multiplier="1:1" id="135-Vv-SS2"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bo-Ca-5tv" customClass="FSCalendar">
-<<<<<<< HEAD
                                 <rect key="frame" x="20" y="169" width="374" height="223"/>
-=======
-                                <rect key="frame" x="20" y="197" width="374" height="223"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="223" id="Vfj-ye-uwG"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="UNz-qp-IYS">
-<<<<<<< HEAD
                                 <rect key="frame" x="200" y="402" width="189" height="30"/>
-=======
-                                <rect key="frame" x="200" y="430" width="189" height="30"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2t0-Gh-MRd">
                                         <rect key="frame" x="0.0" y="0.0" width="91" height="30"/>
@@ -497,27 +431,17 @@
                                 </subviews>
                             </stackView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8l-mN-qyP">
-<<<<<<< HEAD
                                 <rect key="frame" x="20" y="442" width="374" height="470"/>
-=======
-                                <rect key="frame" x="20" y="470" width="374" height="442"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                 <connections>
                                     <segue destination="tGr-zb-hSP" kind="embed" id="Gll-Cj-jNd"/>
                                 </connections>
                             </containerView>
-<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="무비 다이어리" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWr-gy-Oa5">
                                 <rect key="frame" x="157" y="114" width="100" height="16.5"/>
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="무비 다이어리" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWr-gy-Oa5">
-                                <rect key="frame" x="157" y="110" width="125" height="19"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                 <fontDescription key="fontDescription" name="ELANDChoiceM" family="ELAND Choice" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhp-3P-eqP">
                                 <rect key="frame" x="315" y="137" width="23" height="23"/>
                                 <color key="tintColor" red="0.5472784638" green="0.38635545970000001" blue="0.2129407525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -529,17 +453,12 @@
                                     <action selector="actCalendar:" destination="vki-0k-NDj" eventType="touchUpInside" id="MfL-76-XoH"/>
                                 </connections>
                             </button>
-=======
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Apf-2h-fKB"/>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="XBE-Ki-19r" firstAttribute="leading" secondItem="lga-Dh-fsZ" secondAttribute="trailing" constant="31" id="3KW-LA-hnE"/>
-<<<<<<< HEAD
                             <constraint firstItem="Rhp-3P-eqP" firstAttribute="top" secondItem="cud-Av-m77" secondAttribute="top" id="7Dj-06-zSA"/>
-=======
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                             <constraint firstItem="PWr-gy-Oa5" firstAttribute="top" secondItem="XBE-Ki-19r" secondAttribute="bottom" constant="8" id="7Uw-hE-PHH"/>
                             <constraint firstItem="lga-Dh-fsZ" firstAttribute="top" secondItem="Apf-2h-fKB" secondAttribute="top" constant="26" id="C8h-8I-JRG"/>
                             <constraint firstItem="PWr-gy-Oa5" firstAttribute="leading" secondItem="lga-Dh-fsZ" secondAttribute="trailing" constant="52" id="LpJ-Ud-Pjk"/>
@@ -548,10 +467,7 @@
                             <constraint firstItem="Apf-2h-fKB" firstAttribute="trailing" secondItem="7Bo-Ca-5tv" secondAttribute="trailing" constant="20" id="Wst-Ar-ojr"/>
                             <constraint firstItem="7Bo-Ca-5tv" firstAttribute="top" secondItem="cud-Av-m77" secondAttribute="bottom" constant="13" id="a9Q-ec-zyv"/>
                             <constraint firstItem="UNz-qp-IYS" firstAttribute="top" secondItem="7Bo-Ca-5tv" secondAttribute="bottom" constant="10" id="aRn-up-KdT"/>
-<<<<<<< HEAD
                             <constraint firstItem="Rhp-3P-eqP" firstAttribute="centerX" secondItem="9eJ-5W-mXN" secondAttribute="centerX" constant="-48" id="aY8-eC-vkb"/>
-=======
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                             <constraint firstItem="Apf-2h-fKB" firstAttribute="trailing" secondItem="cud-Av-m77" secondAttribute="trailing" constant="30" id="bdf-eN-PgE"/>
                             <constraint firstItem="P8l-mN-qyP" firstAttribute="bottom" secondItem="Apf-2h-fKB" secondAttribute="bottom" constant="50" id="dMw-lE-akk"/>
                             <constraint firstItem="7Bo-Ca-5tv" firstAttribute="leading" secondItem="Apf-2h-fKB" secondAttribute="leading" constant="20" id="evl-Uu-bwQ"/>

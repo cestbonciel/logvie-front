@@ -65,15 +65,11 @@ class WriteDiaryViewController: UIViewController {
    
 
     @IBAction func actGetImage(_ sender: Any) {
-<<<<<<< HEAD
 		if #available(iOS 14, *) {
 			present(photoPicker, animated: true)
 		} else {
 			// Fallback on earlier versions
 		}
-=======
-        present(photoPicker, animated: true)
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
     }
     
 
@@ -188,12 +184,8 @@ extension UITextField {
 }
 
 extension WriteDiaryViewController: PHPickerViewControllerDelegate {
-<<<<<<< HEAD
 	@available(iOS 14, *)
 	var photoPicker: PHPickerViewController {
-=======
-    var photoPicker: PHPickerViewController {
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
         var config = PHPickerConfiguration()
         config.selectionLimit = 1
         config.filter = PHPickerFilter.images
@@ -204,12 +196,8 @@ extension WriteDiaryViewController: PHPickerViewControllerDelegate {
         return photoPicker
     }
     
-<<<<<<< HEAD
 	@available(iOS 14.0, *)
 	func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
-=======
-    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
         picker.dismiss(animated: false)
         
         guard let result = results.first else {

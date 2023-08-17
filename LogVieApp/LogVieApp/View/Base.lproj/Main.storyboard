@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y1m-4L-EeH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y1m-4L-EeH">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -70,7 +63,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8t-TY-tt2">
                                 <rect key="frame" x="26" y="714" width="82" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-<<<<<<< HEAD
                                 <color key="tintColor" red="0.5472784638" green="0.38635545970000001" blue="0.2129407525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
@@ -78,14 +70,6 @@
                                     <imageReference key="image" image="chevron.left" catalog="system" symbolScale="small"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                 </state>
-=======
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="chevron.left" catalog="system" symbolScale="small"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
-                                    <color key="baseForegroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
-                                </buttonConfiguration>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                 <connections>
                                     <action selector="actPrev:" destination="4ZR-Hg-V2J" eventType="touchUpInside" id="ei6-Kl-scE"/>
                                 </connections>
@@ -93,7 +77,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXS-ao-jQP">
                                 <rect key="frame" x="303" y="714" width="82" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-<<<<<<< HEAD
                                 <color key="tintColor" red="0.5472784638" green="0.38635545970000001" blue="0.2129407525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
@@ -101,14 +84,6 @@
                                     <imageReference key="image" image="chevron.right" catalog="system" symbolScale="small"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                 </state>
-=======
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="chevron.right" catalog="system" symbolScale="small"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
-                                    <color key="baseForegroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
-                                </buttonConfiguration>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                 <connections>
                                     <action selector="actNext:" destination="4ZR-Hg-V2J" eventType="touchUpInside" id="DMy-sv-I2o"/>
                                 </connections>
@@ -152,13 +127,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
                             <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSp-ad-eP5">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-=======
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSp-ad-eP5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                 <constraints>
                                     <constraint firstAttribute="height" constant="769" id="RCY-2j-tTe"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="769" id="ZcS-M9-Kye"/>
@@ -172,10 +142,6 @@
                         <viewLayoutGuide key="safeArea" id="qyr-gw-CgB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-<<<<<<< HEAD
-=======
-                            <constraint firstAttribute="bottom" secondItem="wSp-ad-eP5" secondAttribute="bottom" id="EEp-Gp-tMQ"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                             <constraint firstItem="wSp-ad-eP5" firstAttribute="leading" secondItem="qyr-gw-CgB" secondAttribute="leading" id="FZ6-nk-Us0"/>
                             <constraint firstItem="wSp-ad-eP5" firstAttribute="top" secondItem="ptw-cV-Tku" secondAttribute="top" id="J9H-Tq-E2g"/>
                             <constraint firstItem="wSp-ad-eP5" firstAttribute="trailing" secondItem="qyr-gw-CgB" secondAttribute="trailing" id="LHS-Rr-dGt"/>
@@ -221,11 +187,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGM-98-lfu">
-<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="48" width="414" height="765"/>
-=======
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
                                 <connections>
                                     <segue destination="SQT-NP-aQe" kind="embed" id="PXG-d2-Bvu"/>
                                 </connections>
@@ -309,7 +271,6 @@
         </scene>
     </scenes>
     <resources>
-<<<<<<< HEAD
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="house" catalog="system" width="128" height="104"/>
@@ -319,17 +280,6 @@
         <image name="note.text.badge.plus" catalog="system" width="128" height="108"/>
         <image name="paperplane" catalog="system" width="128" height="119"/>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
-=======
-        <image name="chevron.left" catalog="system" width="96" height="128"/>
-        <image name="chevron.right" catalog="system" width="96" height="128"/>
-        <image name="house" catalog="system" width="128" height="106"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="note" catalog="system" width="128" height="106"/>
-        <image name="note.text.badge.plus" catalog="system" width="128" height="108"/>
-        <image name="paperplane" catalog="system" width="128" height="118"/>
-        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
->>>>>>> e6c1e0aab05df91127cce08c9127965165070713
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
