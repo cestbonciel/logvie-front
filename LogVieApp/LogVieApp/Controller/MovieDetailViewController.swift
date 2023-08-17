@@ -23,7 +23,9 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var lblRating: UILabel!
     @IBOutlet weak var imgPoster: UIImageView!
     @IBOutlet weak var imgBackdrop: UIImageView!
-    @IBOutlet weak var lblOverview: UILabel!
+//    @IBOutlet weak var lblOverview: UILabel!
+    
+    @IBOutlet weak var lblOverview: UITextView!
     @IBOutlet weak var btnBookmark: UIButton!
     
     override func viewDidLoad() {
@@ -48,13 +50,15 @@ class MovieDetailViewController: UIViewController {
         }
         let movieId = movie.id
         
-        guard let uid = UserDefaults.standard.string(forKey: "uid") else {return}
+        guard let uid = UserDefaults.standard.string(forKey: "user_id") else {return}
         
         post(movieId: movieId, userId: uid)
     }
 
     func post(movieId:Int, userId:String){
+//        let strURL = "http://52.231.64.183:8000/logvie_app/favorites/"
         let strURL = "http://localhost:8000/logvie_app/favorites/"
+
         let params:Parameters = ["movie_id":movieId, "user_id":userId]
         let request = AF.request(strURL, method: .post, parameters: params)
         request.responseDecodable(of: PostFavorites.self) { response in
@@ -63,7 +67,7 @@ class MovieDetailViewController: UIViewController {
                 print(error.errorDescription)
             case.success(let postFavorites):
                 let result = postFavorites.result as? String
-                if result == "sucess" {
+                if result == "success" {
                     print("성공")
                 } else {
                     print("실패")
@@ -97,7 +101,7 @@ class MovieDetailViewController: UIViewController {
         let backdropFullPath = "\(posterBaseURL)\(backdropPath)"
         imgBackdrop.sd_setImage(with: URL(string: backdropFullPath), completed: nil)
         lblOverview.text = overview
-        lblOverview.numberOfLines = 0
+//        lblOverview.numberOfLines = 0
     }
     
     /*

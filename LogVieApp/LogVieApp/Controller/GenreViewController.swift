@@ -35,6 +35,7 @@ class GenreViewController: UIViewController, UICollectionViewDelegate, UICollect
         if let genreId = genreId {
             getMovies(genre: genreId)
         }
+//        self.navigationController?.navigationBar.tintColor = UIColor(displayP3Red: 139.0/255.0, green: 97.0/255.0, blue: 53.0, alpha: 1.0)
     }
     
     

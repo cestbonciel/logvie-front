@@ -8,19 +8,26 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import PhotosUI
+
+
+
 
 class WriteDiaryViewController: UIViewController {
-
-
+    let containerName = "logvieimgs"
+    let connectionString:String = "DefaultEndpointsProtocol=https;AccountName=logvieoblobimgs;AccountKey=LmiLJOBXGakx9UodRVLenmDyg8aoRDWabfKIyO28rTOHMRptZVH2oooHj0TEOGKQwwxDWrmcaa2/N/apD3e2wg==;EndpointSuffix=core.windows.net"
     let myColor = UIColor(red: 133.0/255.0, green: 99.0/255.0, blue: 60.0/255.0, alpha: 1.0)
+//    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var uploadBtn: UIButton!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var uploadImageView: UIImageView!
     @IBOutlet weak var datePicker: UIDatePicker!
     
     @IBOutlet weak var movieTit: UITextField!
-    @IBOutlet weak var recordBtn: UIButton!
+    
     @IBOutlet weak var diaryText: UITextView!
     @IBOutlet weak var cancelBtn: UIButton!
-
+    
     // 기분 감정 버튼
     @IBOutlet var buttons: [UIButton]!
     var moodLib:Int = 1
@@ -37,9 +44,12 @@ class WriteDiaryViewController: UIViewController {
         if let uid = UserDefaults.standard.string(forKey: "uid") {
             self.userId = uid
         }
+        diaryText.resignFirstResponder()
         
     }
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
 //    func register(user)
 
     /*
@@ -54,24 +64,54 @@ class WriteDiaryViewController: UIViewController {
     
    
 
-    @IBAction func actSave(_ sender: Any) {
-        
-        let dataformatter = DateFormatter()
-        dataformatter.dateFormat = "yyyy-MM-dd"
-        let datestr = dataformatter.string(from: datePicker.date)
-        let photo = UIImage(named:"logo_eng")
+    @IBAction func actGetImage(_ sender: Any) {
+        present(photoPicker, animated: true)
+    }
     
+
+    
+    func userSelectedPhoto(_ image: UIImage){
+        // 이미지 피커 didFinish 선택한 이미지를 이미지뷰에 업데이트, 모델 호출, 레이블 적용
+        DispatchQueue.main.async {
+            // 메인 스레드에서 이미지 업데이트
+            self.imageView.image = image
+        }
+        
+    }
+    
+    
+    @IBAction func actSave(_ sender: Any) {
+        var imageName = ""
+        let dataformatter = DateFormatter()
+        dataformatter.dateFormat = "yyyy년 M월 d일"
+        let datestr = dataformatter.string(from: datePicker.date)
+        // 선택한 사진이 nil 이면 기본 사진, 값이 있으면 이미지뷰 
+        
+        if uploadImageView.image == nil{
+            imageName = "logo_eng"
+            uploadImageView.image = UIImage(named:imageName)
+
+        } else {
+            imageName = ProcessInfo.processInfo.globallyUniqueString
+            let blobImage =  AZBlobImage(containerName: containerName)
+            if let image = uploadImageView.image{
+                if let data = image.jpegData(compressionQuality: 0.3){
+                    blobImage.uploadData(data: data, blobName: imageName)
+                }
+            }
+        }
+        
+        
         guard let userId = UserDefaults.standard.string(forKey: "user_id"),
               let title = movieTit.text,
-              let diaryTxt = diaryText.text else {
-            return
-        }
-
+              let diaryTxt = diaryText.text
+        else {return}
+        
         let params:Parameters = ["user_id":userId,
                                  "writing_date":datestr,
-                                 "movie_title":title,
-                                 "diary_text":diaryTxt,
-                                 "photo":"logo_eng.png",
+                             "movie_title":title,
+                             "diary_text":diaryTxt,
+                                 "photo":imageName, //"photo":"logo2.png",
                                  "mood":moodLib ]
         post(params:params)
     }
@@ -89,6 +129,7 @@ class WriteDiaryViewController: UIViewController {
     }
     
     func post(params:Parameters){
+//        let strURL = "http://52.231.64.183:8000/logvie_app/diaries/"
         let strURL = "http://localhost:8000/logvie_app/diaries/"
         let request = AF.request(strURL, method: .post,parameters: params)
         
@@ -109,6 +150,7 @@ class WriteDiaryViewController: UIViewController {
                     let action2 = UIAlertAction(title: "확인", style: .default) { action2 in
                         print("error")
                     }
+                    failedAlert.addAction(action2)
                     self.present(failedAlert, animated: true)
                 }
                 
@@ -120,8 +162,6 @@ class WriteDiaryViewController: UIViewController {
         
         self.dismiss(animated: true)
     }
-    
-
 }
 
 extension UITextField {
@@ -136,5 +176,31 @@ extension UITextField {
         borderStyle = .none
         layer.addSublayer(border)
 
+    }
+}
+
+extension WriteDiaryViewController: PHPickerViewControllerDelegate {
+    var photoPicker: PHPickerViewController {
+        var config = PHPickerConfiguration()
+        config.selectionLimit = 1
+        config.filter = PHPickerFilter.images
+        
+        let photoPicker = PHPickerViewController(configuration: config)
+        photoPicker.delegate = self
+        
+        return photoPicker
+    }
+    
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        picker.dismiss(animated: false)
+        
+        guard let result = results.first else {
+            return
+        }
+        result.itemProvider.loadObject(ofClass: UIImage.self) { object, Error in
+            if let photo = object as? UIImage {
+                self.userSelectedPhoto(photo)
+            }
+        }
     }
 }

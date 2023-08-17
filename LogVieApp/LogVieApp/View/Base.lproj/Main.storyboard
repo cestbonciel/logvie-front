@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,33 +12,105 @@
         <array key="ELAND 초이스 B.ttf">
             <string>ELANDChoiceB</string>
         </array>
+        <array key="ELAND 초이스 M.ttf">
+            <string>ELANDChoiceM</string>
+        </array>
     </customFonts>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="GeI-gd-lAh">
+            <objects>
+                <viewController id="ypm-Bx-cRr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HpW-uN-bbn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xgz-ob-ANd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nzc-SB-c5A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4630.434782608696" y="-314.0625"/>
+        </scene>
         <!--홈-->
         <scene sceneID="Rik-yE-ctM">
             <objects>
-                <viewController id="4ZR-Hg-V2J" customClass="HomeViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeView" id="4ZR-Hg-V2J" customClass="HomeViewController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3kh-SK-kXh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zt3-3a-jvz">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rNO-8z-LhU">
+                                <rect key="frame" x="57" y="217" width="300" height="450"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BOX OFFICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oG7-vX-BH3">
+                                <rect key="frame" x="149" y="115" width="117" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="20"/>
+                                <color key="textColor" red="0.5450980392" green="0.3803921569" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영화 매니아들이 애정하는 영화순위" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yao-g2-SCY">
+                                <rect key="frame" x="61" y="160" width="314" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceM" family="ELAND Choice" pointSize="20"/>
+                                <color key="textColor" red="0.1695179939" green="0.1864649951" blue="0.26275417210000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8t-TY-tt2">
+                                <rect key="frame" x="26" y="714" width="82" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="chevron.left" catalog="system" symbolScale="small"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <segue destination="DGv-z7-Y3h" kind="embed" id="0zQ-ZT-Qfw"/>
+                                    <action selector="actPrev:" destination="4ZR-Hg-V2J" eventType="touchUpInside" id="ei6-Kl-scE"/>
                                 </connections>
-                            </containerView>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXS-ao-jQP">
+                                <rect key="frame" x="303" y="714" width="82" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="chevron.right" catalog="system" symbolScale="small"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
+                                    <color key="baseForegroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actNext:" destination="4ZR-Hg-V2J" eventType="touchUpInside" id="DMy-sv-I2o"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8a-s1-Dh8">
+                                <rect key="frame" x="116" y="718" width="194" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="14"/>
+                                <color key="textColor" red="0.1695179939" green="0.1864649951" blue="0.26275417210000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCM-jN-hWf">
+                                <rect key="frame" x="80" y="600" width="134" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KQV-Kc-lCV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="KQV-Kc-lCV" firstAttribute="trailing" secondItem="Zt3-3a-jvz" secondAttribute="trailing" id="gBl-J9-bC2"/>
-                            <constraint firstItem="KQV-Kc-lCV" firstAttribute="bottom" secondItem="Zt3-3a-jvz" secondAttribute="bottom" id="mCh-VN-1C7"/>
-                            <constraint firstItem="Zt3-3a-jvz" firstAttribute="top" secondItem="KQV-Kc-lCV" secondAttribute="top" id="oOj-uo-AIe"/>
-                            <constraint firstItem="Zt3-3a-jvz" firstAttribute="leading" secondItem="KQV-Kc-lCV" secondAttribute="leading" id="uKH-1H-BFh"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.96067827939999995" green="0.95308357480000006" blue="0.94509750599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" selectedImage="house.fill" id="RRY-Tu-ohX"/>
+                    <connections>
+                        <outlet property="btnNext" destination="oXS-ao-jQP" id="C8m-O7-OD5"/>
+                        <outlet property="btnPrev" destination="m8t-TY-tt2" id="3Um-yH-3cS"/>
+                        <outlet property="container" destination="rNO-8z-LhU" id="Re0-e9-kzn"/>
+                        <outlet property="lblRank" destination="qCM-jN-hWf" id="jsl-7x-6U7"/>
+                        <outlet property="lblTitle" destination="T8a-s1-Dh8" id="cxv-g6-80M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZX-Dw-wyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +125,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSp-ad-eP5">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="769" id="RCY-2j-tTe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="769" id="ZcS-M9-Kye"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="896" id="t5A-iN-oad"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="1Sl-bs-blg" kind="embed" id="vzE-sO-OaN"/>
                                 </connections>
@@ -61,10 +139,10 @@
                         <viewLayoutGuide key="safeArea" id="qyr-gw-CgB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wSp-ad-eP5" firstAttribute="top" secondItem="qyr-gw-CgB" secondAttribute="top" id="6Yc-6c-z5c"/>
-                            <constraint firstItem="qyr-gw-CgB" firstAttribute="bottom" secondItem="wSp-ad-eP5" secondAttribute="bottom" id="TSr-4H-1Q6"/>
-                            <constraint firstItem="wSp-ad-eP5" firstAttribute="leading" secondItem="qyr-gw-CgB" secondAttribute="leading" id="ZYX-i3-eeP"/>
-                            <constraint firstItem="qyr-gw-CgB" firstAttribute="trailing" secondItem="wSp-ad-eP5" secondAttribute="trailing" id="fIb-GZ-rhA"/>
+                            <constraint firstAttribute="bottom" secondItem="wSp-ad-eP5" secondAttribute="bottom" id="EEp-Gp-tMQ"/>
+                            <constraint firstItem="wSp-ad-eP5" firstAttribute="leading" secondItem="qyr-gw-CgB" secondAttribute="leading" id="FZ6-nk-Us0"/>
+                            <constraint firstItem="wSp-ad-eP5" firstAttribute="top" secondItem="ptw-cV-Tku" secondAttribute="top" id="J9H-Tq-E2g"/>
+                            <constraint firstItem="wSp-ad-eP5" firstAttribute="trailing" secondItem="qyr-gw-CgB" secondAttribute="trailing" id="LHS-Rr-dGt"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="검색" image="magnifyingglass" catalog="system" id="QRX-Il-s6S"/>
@@ -81,8 +159,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTl-AJ-Ns3">
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTl-AJ-Ns3">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="ZNY-Td-6kT" kind="embed" id="BUN-cg-7mc"/>
                                 </connections>
@@ -90,12 +169,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pZg-th-mnT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="bTl-AJ-Ns3" firstAttribute="leading" secondItem="pZg-th-mnT" secondAttribute="leading" id="9fi-S4-JU7"/>
-                            <constraint firstItem="bTl-AJ-Ns3" firstAttribute="top" secondItem="pZg-th-mnT" secondAttribute="top" id="FLo-iD-dBV"/>
-                            <constraint firstItem="pZg-th-mnT" firstAttribute="bottom" secondItem="bTl-AJ-Ns3" secondAttribute="bottom" id="Fvs-dp-qVF"/>
-                            <constraint firstItem="pZg-th-mnT" firstAttribute="trailing" secondItem="bTl-AJ-Ns3" secondAttribute="trailing" id="ymj-pl-jkw"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="랜덤추천" image="paperplane" catalog="system" selectedImage="paperplane.fill" id="7Ax-mC-FeR"/>
                 </viewController>
@@ -136,10 +209,11 @@
         <!--Color Tab Bar Controller-->
         <scene sceneID="62R-54-FNM">
             <objects>
-                <tabBarController id="y1m-4L-EeH" customClass="ColorTabBarController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lPx-0h-OIW">
+                <tabBarController storyboardIdentifier="tabBar" id="y1m-4L-EeH" customClass="ColorTabBarController" customModule="LogVieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="lPx-0h-OIW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.9132717252" green="0.88700890539999999" blue="0.84705322979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
@@ -161,7 +235,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUX-HF-NAT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3975" y="160"/>
+            <point key="canvasLocation" x="-4459" y="104"/>
         </scene>
         <!--SearchView-->
         <scene sceneID="FTW-xr-hqC">
@@ -193,77 +267,10 @@
             </objects>
             <point key="canvasLocation" x="-1474" y="42"/>
         </scene>
-        <!--Login View Controller-->
-        <scene sceneID="EqA-av-WmD">
-            <objects>
-                <viewController storyboardIdentifier="Login" id="eAK-9q-jlg" customClass="LoginViewController" customModule="LogVieApp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="eho-fw-gXU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Graph Letter v2" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2hn-o8-5dY">
-                                <rect key="frame" x="-43" y="-47" width="500" height="967"/>
-                                <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgs-0M-vco">
-                                <rect key="frame" x="178" y="410" width="57" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="20"/>
-                                <color key="textColor" red="0.5450980392" green="0.3803921569" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo_eng" translatesAutoresizingMaskIntoConstraints="NO" id="cOq-D0-P36">
-                                <rect key="frame" x="145" y="239" width="124" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dnv-ml-iPs">
-                                <rect key="frame" x="139" y="588" width="140" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1647058824" green="0.18823529410000001" blue="0.27058823529999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="입장">
-                                    <color key="baseForegroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.mask.bounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="actSave:" destination="eAK-9q-jlg" eventType="touchUpInside" id="vWr-0B-23g"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="닉네임을 입력해주세요." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ejj-4d-Hal">
-                                <rect key="frame" x="111" y="463" width="192" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="닉네임은 3자 이상 10자 이내로" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJL-Is-3DA">
-                                <rect key="frame" x="192" y="502" width="106" height="9"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ELANDChoiceB" family="ELAND Choice" pointSize="8"/>
-                                <color key="textColor" red="0.52016389370000005" green="0.3866019845" blue="0.23526030780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Vac-ac-Dgr"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <connections>
-                        <outlet property="textField" destination="Ejj-4d-Hal" id="yXz-qY-Qhx"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pEE-JS-1qq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3923" y="-1196"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="Graph Letter v2" width="612" height="792"/>
-        <image name="Logo_eng" width="202" height="159"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
@@ -273,9 +280,6 @@
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -8,7 +8,7 @@
 import UIKit
 
 class ColorTabBarController: UITabBarController {
-
+//    var imageInsets:UIEdgeInsets
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +31,12 @@ class ColorTabBarController: UITabBarController {
         }*/
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tabBar.frame.size.height = 95
+        tabBar.frame.origin.y = view.frame.height - 95
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -43,3 +49,11 @@ class ColorTabBarController: UITabBarController {
     */
 
 }
+
+//extension UITabBar {
+//    override open func sizeThatFits(_ size: CGSize) -> CGSize {
+//    var sizeThatFits = super.sizeThatFits(size)
+//    sizeThatFits.height = 50 // 원하는 길이
+//    return sizeThatFits
+//   }
+//}
