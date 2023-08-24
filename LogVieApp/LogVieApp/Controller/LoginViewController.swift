@@ -8,8 +8,8 @@
 import UIKit
 
 class LoginViewController: UIViewController{
-    var userId:String?
-    var diaryVC:DiaryViewController?
+    var userId: String?
+    var diaryVC: DiaryViewController?
   
     @IBOutlet weak var textField: UITextField!
     

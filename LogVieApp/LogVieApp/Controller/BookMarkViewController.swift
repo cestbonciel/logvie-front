@@ -56,7 +56,7 @@ class BookMarkViewController: UIViewController, UITableViewDelegate, UITableView
     
     func getMovieDetail(movieId:Int){
         let endPoint:String = "https://api.themoviedb.org/3/movie/\(movieId)"
-        let apiKey = "2b776cd7a06fe6316152d5c1ac2fecb1"
+        let apiKey = Bundle.main.apiKey
         
         let params:Parameters=["api_key":apiKey, "language":"ko-KR"]
         let request = AF.request(endPoint, method: .get, parameters: params)

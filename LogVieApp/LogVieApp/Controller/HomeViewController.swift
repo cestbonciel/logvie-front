@@ -78,7 +78,7 @@ class HomeViewController: UIViewController {
     
     func getMovie(){
         let endPoint = "https://api.themoviedb.org/3/movie/now_playing?page="
-        let apiKey = "2b776cd7a06fe6316152d5c1ac2fecb1"
+        let apiKey = Bundle.main.apiKey
         
         let params:Parameters = ["api_key":apiKey, "language":"ko-KR", "page":1]
         
@@ -148,7 +148,7 @@ class HomeViewController: UIViewController {
     }
     
     @objc func nextImage(){
-        if isAnimating{return}
+        if isAnimating{ return }
         isAnimating = true
         btnNext.isEnabled = true
         btnPrev.isEnabled = true

@@ -30,7 +30,7 @@ class RandomViewController: UIViewController {
     
     func getRandomMovie(page:Int){
         let endPoint = "https://api.themoviedb.org/3/movie/now_playing"
-        let apiKey = "2b776cd7a06fe6316152d5c1ac2fecb1"
+        let apiKey = Bundle.main.apiKey
         
         let params:Parameters = ["api_key":apiKey, "language":"ko-KR", "page":page]
         

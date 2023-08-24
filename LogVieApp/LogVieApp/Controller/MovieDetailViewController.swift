@@ -15,7 +15,7 @@ class MovieDetailViewController: UIViewController {
     var movies:[Movie]?
     
     let posterBaseURL = "https://image.tmdb.org/t/p/w500"
-    let apiKey = "2b776cd7a06fe6316152d5c1ac2fecb1"
+    let apiKey = Bundle.main.apiKey
     
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblOriginalTitle: UILabel!

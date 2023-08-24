@@ -20,7 +20,7 @@ class GenreViewController: UIViewController, UICollectionViewDelegate, UICollect
     var movies:[Movie]?
     
     let posterBaseURL = "https://image.tmdb.org/t/p/w500"
-    let apiKey = "2b776cd7a06fe6316152d5c1ac2fecb1"
+    let apiKey = Bundle.main.apiKey
     
     override func viewDidLoad() {
         super.viewDidLoad()

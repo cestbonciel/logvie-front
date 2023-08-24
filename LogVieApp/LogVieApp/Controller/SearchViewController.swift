@@ -77,7 +77,7 @@ class SearchViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func search(query:String){
         let endPoint = "https://api.themoviedb.org/3/search/movie"
-        let apiKey = "2b776cd7a06fe6316152d5c1ac2fecb1"
+		let apiKey = Bundle.main.apiKey
         
         let params:Parameters=["api_key":apiKey,"query":query, "language":"ko-KR", "page":1]
         let request = AF.request(endPoint, method: .get, parameters: params)
