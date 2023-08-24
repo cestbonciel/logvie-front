@@ -7,13 +7,13 @@
  ### 영화는 그 날의 감상, 장소, 감정들을 떠올리게 합니다. 영화를 봤던 소중한 순간들을 기록할 수 있는 영화 다이어리 앱입니다.
  
 > Api Key 세팅방법
- - Api Key 는 TMDB 의 [Api Key](https://www.themoviedb.org/settings/api)에서 발급받아서,
+ - Api Key 는 TMDB 에서 로그인 후  [Api Key](https://www.themoviedb.org/settings/api)에서 발급받아서,
 	`let ApiKey = "String" `double Quotation 안에 넣어서 테스트 해보시면됩니다. 
  
 
 ### 백엔드 세팅 기본 
 -> Django 연결하고 
--> Azure vm server 세팅 했음.
+-> Azure vm server 세팅 했음. ( 운용비용 문제로 닫았습니다.)
 
   [ 백엔드 repository ] [https://github.com/cestbonciel/logvie_backend]
   
