@@ -42,7 +42,7 @@ class DiaryProfileViewController: UIViewController,UIImagePickerControllerDelega
         if let data = UserDefaults.standard.data(forKey: "profile_image"){
             userProfilephoto.image = UIImage(data: data)
         } else {
-            let photo  = UIImage(named:"logo2")
+            let photo = UIImage(named:"logo2")
             userProfilephoto.image = photo
         }
         

@@ -29,7 +29,7 @@ class DiaryViewController: UIViewController, FSCalendarDelegate, FSCalendarDataS
    
     
     var dates:[String] = []
-    var diaryTVC:DiaryTableViewController?
+    var diaryTVC: DiaryTableViewController?
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let formatter = DateFormatter()

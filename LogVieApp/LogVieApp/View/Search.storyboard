@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Txm-wv-cnC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Txm-wv-cnC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -20,7 +21,7 @@
                 <navigationController storyboardIdentifier="SearchView" id="Txm-wv-cnC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="aHG-rp-7F9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zbD-EV-0Rk">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -39,15 +40,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acb-f4-kR1">
-                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="acb-f4-kR1">
+                                <rect key="frame" x="24" y="80" width="366" height="56"/>
                                 <color key="tintColor" red="0.5450980392" green="0.3803921569" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9D2-3D-dU0">
-                                <rect key="frame" x="20" y="179" width="374" height="606"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9D2-3D-dU0">
+                                <rect key="frame" x="20" y="168" width="374" height="630"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.94117647058823528" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VqF-9N-Fgu">
                                     <size key="itemSize" width="184" height="184"/>
@@ -63,14 +62,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="184" height="184"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyw-X6-WME">
-                                                    <rect key="frame" x="0.0" y="0.0" width="184" height="184"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyw-X6-WME">
+                                                    <rect key="frame" x="66.5" y="66.5" width="51" height="51"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Wyw-X6-WME" secondAttribute="height" multiplier="1:1" id="E5n-ta-OAc"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="ELANDChoiceM" family="ELAND Choice" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Wyw-X6-WME" firstAttribute="centerX" secondItem="QL7-cf-boz" secondAttribute="centerX" id="NMd-RV-UhD"/>
+                                                <constraint firstItem="Wyw-X6-WME" firstAttribute="centerY" secondItem="QL7-cf-boz" secondAttribute="centerY" id="mS5-fb-Ns4"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
                                             <segue destination="Pni-Mn-JY5" kind="show" id="Ni7-e0-wuK"/>
@@ -84,7 +89,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCell" rowHeight="70" id="MSW-qr-5GD">
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="70"/>
+                                        <rect key="frame" x="0.0" y="50" width="374" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MSW-qr-5GD" id="y0h-ZU-7nN">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
@@ -113,6 +118,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SiX-dA-ycF"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94117647058823528" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SiX-dA-ycF" firstAttribute="trailing" secondItem="acb-f4-kR1" secondAttribute="trailing" constant="24" id="3Z1-4l-kby"/>
+                            <constraint firstItem="acb-f4-kR1" firstAttribute="top" secondItem="cz6-ko-znE" secondAttribute="top" constant="80" id="6xq-ap-fF6"/>
+                            <constraint firstItem="acb-f4-kR1" firstAttribute="leading" secondItem="SiX-dA-ycF" secondAttribute="leading" constant="24" id="7PP-Np-tNa"/>
+                            <constraint firstItem="9D2-3D-dU0" firstAttribute="leading" secondItem="SiX-dA-ycF" secondAttribute="leading" constant="20" id="KxJ-2R-PQ8"/>
+                            <constraint firstItem="SiX-dA-ycF" firstAttribute="trailing" secondItem="9D2-3D-dU0" secondAttribute="trailing" constant="20" id="Rxd-aT-2JE"/>
+                            <constraint firstItem="SiX-dA-ycF" firstAttribute="bottom" secondItem="9D2-3D-dU0" secondAttribute="bottom" constant="64" id="h7p-IL-GbV"/>
+                            <constraint firstItem="9D2-3D-dU0" firstAttribute="top" secondItem="acb-f4-kR1" secondAttribute="bottom" constant="32" id="xYg-i2-R5s"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="arb-Iq-iN2"/>
                     <connections>
@@ -315,7 +329,7 @@
     <color key="tintColor" red="0.5450980392" green="0.3803921569" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -6,7 +6,7 @@
       "location" : "https://github.com/Alamofire/Alamofire.git",
       "state" : {
         "branch" : "master",
-        "revision" : "65b77694905b0dea7e419b2f74b1e5dc037094b5"
+        "revision" : "41bcbaf24f67efb2befd8abc0f32f0c66d1c78be"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/WenchaoD/FSCalendar.git",
       "state" : {
-        "revision" : "4e79a201fad268408a4fd9e2ef429497def9594f",
-        "version" : "2.8.2"
+        "revision" : "0fbdec5172fccb90f707472eeaea4ffe095278f6",
+        "version" : "2.8.4"
       }
     },
     {
@@ -33,7 +33,7 @@
       "location" : "https://github.com/SDWebImage/SDWebImage.git",
       "state" : {
         "branch" : "master",
-        "revision" : "8d558cb79f44c00bc75e71a509021b9551941aed"
+        "revision" : "6e844d19679c9e0833ccc363d7f5a7c5f0c5f5d7"
       }
     }
   ],

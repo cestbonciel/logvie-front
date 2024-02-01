@@ -10,12 +10,9 @@ import Alamofire
 import SwiftyJSON
 import PhotosUI
 
-
-
-
 class WriteDiaryViewController: UIViewController {
     let containerName = "logvieimgs"
-    let connectionString:String = "DefaultEndpointsProtocol=https;AccountName=logvieoblobimgs;AccountKey=LmiLJOBXGakx9UodRVLenmDyg8aoRDWabfKIyO28rTOHMRptZVH2oooHj0TEOGKQwwxDWrmcaa2/N/apD3e2wg==;EndpointSuffix=core.windows.net"
+    let connectionString:String = "azure_image-blob-value값을 입력해야함"
     let myColor = UIColor(red: 133.0/255.0, green: 99.0/255.0, blue: 60.0/255.0, alpha: 1.0)
 //    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var uploadBtn: UIButton!
@@ -111,12 +108,12 @@ class WriteDiaryViewController: UIViewController {
               let diaryTxt = diaryText.text
         else {return}
         
-        let params:Parameters = ["user_id":userId,
-                                 "writing_date":datestr,
-                             "movie_title":title,
-                             "diary_text":diaryTxt,
-                                 "photo":imageName, //"photo":"logo2.png",
-                                 "mood":moodLib ]
+		 let params:Parameters = ["user_id":userId,
+										  "writing_date":datestr,
+										  "movie_title":title,
+										  "diary_text":diaryTxt,
+										  "photo":imageName, //"photo":"logo2.png",
+										  "mood":moodLib ]
         post(params:params)
     }
     
